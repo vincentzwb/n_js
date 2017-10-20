@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>关于我们</title>
+        <meta name="viewport" content="width=640">
+        
+
+        <link rel="stylesheet" type="text/css" href="css/global.css" />
+        <link rel="stylesheet" type="text/css" href="css/media.css" />
+
+        
+        <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="js/webfoss.fullscreenstage.js"></script>
+        <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1.js"></script>
+        <script src="./js/waypoints.min.js"></script>
+        <script type="text/javascript" src="js/innerPage.js"></script>
+	</head>
+	<body>
+		
+        <div class="container" id="page">
+            <div id="header">
+                <div class="h_logo">
+                    <div class="h_inner clearAfter">
+                        <div class="logo">
+                            <a href="./">
+                                <img src="images/logo.png">
+                            </a>
+                        </div>
+                        <div class="h_l_r">
+                            <ul>
+                                <li>
+                                    <p>
+                                        <a target="_blank" href="http://www.fdsm.fudan.edu.cn/AboutUs/index.aspx">复旦首页</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                        <a target="_blank" href="http://www.fdsm.fudan.edu.cn/fdmba">管院首页</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                        <a href="./stu_forum.html">学生门户</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                        <a href="./about_us.html">联系我们</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                    </p>
+                                </li>
+                                <li class="langRel">
+                                    <div class="langSwitch">English</div>
+                                    <div class="langHid">
+                                        <p><a href="javascript:void(0)">English</a></p>
+                                        <p><a href="javascript:void(0)">中文</a></p>
+                                    </div>
+                                </li>
+                                <script>
+                                    $(".langSwitch").click(function(){
+                                        if($(this).parent(".langRel").hasClass("active")){
+                                            $(this).parent(".langRel").removeClass("active");
+                                            $(this).next(".langHid").slideUp();
+                                        }else{
+                                            $(this).parent(".langRel").addClass("active");
+                                            $(this).next(".langHid").slideDown();
+                                        }
+                                    })
+                                </script>
+                            </ul>
+                            <div class="h_l_search">
+                                <form id="searchform" action="/site/search" accept-charset="UTF-8" method="get">
+                                    <input type="text" onfocus="document.getElementById('note01').style.display='none'" onblur="if(value=='')document.getElementById('note01').style.display='block'" class="searchext" placeholder="" name="keyword">
+                                    <div id="note01" class="note" onclick="document.getElementById('note01').style.display='none'" style="display: block;">搜索...</div>
+                                    <!--<input type="submit" class="searchbtn">-->
+                                    <input type="button" class="searchbtn">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="nav-toggle">
+                            <div class="icon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_menu">
+                    <div class="h_inner clearAfter">
+                        <div class="h_table">
+                            
+                            <div class="h_t_title">
+                                <p><a href="./">首页</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title">
+                                <p><a href="./introduction.html">项目介绍</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title">
+                                <p><a href="./info_enroll.html">招生信息</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title">
+                                <p><a href="./fea_foster.html">项目特色</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title">
+                                <p><a href="./stu_forum.html">学生生活</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title h_t_title_last">
+                                <p><a href="./about_us.html">关于我们</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="about">
+                <div id="ban">
+                    <img src="images/ban_about.jpg">
+                    <div class="banFont">
+                        <p class="cn">关于我们</p>
+                        <p class="en">ABOUT US</p>
+                    </div>
+                </div>
+                <div id="nav">
+                    <div class="navInner clearAfter">
+                        <div class="navFloat clearAfter">
+                            <div class="nav_ele nav_e_icon"><a href="./">首页</a></div>
+                            <div class="nav_ele nav_e_icon"><a href="./stu_life.html">关于我们</a></div>
+                            <div class="nav_ele nav_e_last">上海</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contain_menu">
+                    <div class="main_inner clearAfter">
+                        <div id="content">
+                            <div class="con_padding">
+                                <div class="con_title">
+                                    <p>联系方式</p>
+                                </div>
+                                <div class="con_inner">
+                                    <div class="about_block">
+                                        <div class="map_wrap">
+                                            <div id="map"></div>
+                                        </div>
+                                        <div class="con_sec clearAfter">
+                                            <div class="con_sec_left">
+                                                <div class="c_l_ele c_l_ele01 clearAfter">
+                                                    <p class="p_tt">招生入学</p>
+                                                    <p class="p_c">电话：25011355</p>
+                                                </div>
+                                                <div class="c_l_ele c_l_ele02 clearAfter">
+                                                    <p class="p_tt">国际事务</p>
+                                                    <p class="p_c">电话：25011355</p>
+                                                </div>
+                                                <div class="c_l_ele c_l_ele03 clearAfter">
+                                                    <p class="p_tt">学生活动</p>
+                                                    <p class="p_c">电话：25011355</p>
+                                                </div>
+                                                <div class="c_l_ele c_l_ele04 clearAfter">
+                                                    <p class="p_tt">教学教务</p>
+                                                    <p class="p_c">电话：25011355</p>
+                                                </div>
+                                            </div>
+                                            <div class="con_sec_right">
+                                                <div class="erweima">
+                                                    <img src="images/erweima.jpg" />
+                                                    <p>复旦MBA项目</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="sidebar">
+                            <div class="sidemenu">
+                                <h3>关于我们</h3>
+                                <ul>
+                                    <a href="./about_us.html">
+                                        <li class="active">
+                                            <p>上海</p>
+                                        </li>
+                                    </a>
+                                    <a href="./about_hk.html">
+                                        <li>
+                                            <p>香港</p>
+                                        </li>
+                                    </a>
+                                    
+                                </ul>
+                            </div>
+                            <div class="pro_block">
+                                <div class="proInner">
+                                    <div class="pro_con">
+                                        <h3>项目介绍</h3>
+                                        <div class="pro_detal">
+                                            <div class="pro_slider">
+                                                <div class="pro_ele">
+                                                    <div class="proImg">
+                                                        <img src="images/proImg01_01.jpg" />
+                                                    </div>
+                                                    <div class="proTitle">
+                                                        <p class="h">复旦MBA项目</p>
+                                                        <p class="p_detail">复旦MBA项目以中文授课为主，课程设置兼顾国际化和本土化，师资本土实践经验更加丰富；</p>
+                                                    </div>
+                                                </div>
+                                                <div class="pro_ele">
+                                                    <div class="proImg">
+                                                        <img src="images/proImg01_02.jpg" />
+                                                    </div>
+                                                    <div class="proTitle">
+                                                        <p class="h">复旦国际MBA项目</p>
+                                                        <p class="p_detail">复旦大学国际MBA项目由复旦大学管理学院和美国麻省理工学院斯隆管理学院（MIT Sloan）于1996年合作设立。</p>
+                                                    </div>
+                                                </div>
+                                                <div class="pro_ele">
+                                                    <div class="proImg">
+                                                        <img src="images/proImg01_03.jpg" />
+                                                    </div>
+                                                    <div class="proTitle">
+                                                        <p class="h">复旦S3Asia MBA项目</p>
+                                                        <p class="p_detail">S3 Asia MBA项目是由复旦大学管理学院、高丽大学商学院和新加坡国立大学商学院在2008年合作开设的双学位项目。</p>
+                                                    </div>
+                                                </div>
+                                                <div class="pro_ele">
+                                                    <div class="proImg">
+                                                        <img src="images/proImg01_04.jpg" />
+                                                    </div>
+                                                    <div class="proTitle">
+                                                        <p class="h">复旦中文MBA香港班</p>
+                                                        <p class="p_detail">复旦MBA项目以中文授课为主，课程设置兼顾国际化和本土化，师资本土实践经验更加丰富；</p>
+                                                    </div>
+                                                </div>
+                                                <div class="pro_ele">
+                                                    <div class="proImg">
+                                                        <img src="images/proImg01_05.jpg" />
+                                                    </div>
+                                                    <div class="proTitle">
+                                                        <p class="h">本科生菁英计划</p>
+                                                        <p class="p_detail">复旦MBA项目以中文授课为主，课程设置兼顾国际化和本土化，师资本土实践经验更加丰富...</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="pro-pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer">
+                <div class="f_con01">
+                    <div class="f_inner clearAfter">
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>项目介绍</p>
+                                </div>
+                                <ul>
+                                    <a href="./project_history.html"><li>项目历程与荣誉</li></a>
+                                    <a href="./project_mba.html"><li>复旦MBA项目</li></a>
+                                    <a href="./project_international.html"><li>复旦国际MBA项目</li></a>
+                                    <a href="./project_asia.html"><li>复旦S3Asia MBA项目</li></a>
+                                    <a href="./project_hk.html"><li>复旦中文MBA香港班</li></a>
+                                    <a href="./project_college.html"><li>本科生菁英计划</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>招生信息</p>
+                                </div>
+                                <ul>
+                                    <a href="./info_enroll.html"><li>招生活动</li></a>
+                                    <a href="./info_apply.html"><li>在线申请</li></a>
+                                    <a href="./info_rules.html"><li>招生简章</li></a>
+                                    <a href="./info_process.html"><li>申请流程</li></a>
+                                    <a href="./info_tuition.html"><li>学费与资助</li></a>
+                                    <a href="./info_down.html"><li>资料下载</li></a>
+                                    <a href="./info_faq.html"><li>常见问题</li></a>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>项目特色</p>
+                                </div>
+                                <ul>
+                                    <a href="./fea_foster.html"><li>培养体系</li></a>
+                                    <a href="./fea_set.html"><li>课程设置</li></a>
+                                    <a href="./fea_view.html"><li>国际视野</li></a>
+                                    <a href="./fea_study.html"><li>行动学习</li></a>
+                                    <a href="./fea_career.html"><li>职业发展</li></a>
+                                    <a href="./fea_service.html"><li>校友服务</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>学生生活</p>
+                                </div>
+                                <ul>
+                                    <a href="./stu_forum.html"><li>论坛讲堂</li></a>
+                                    <a href="./stu_club.html"><li>MBA俱乐部</li></a>
+                                    <a href="./stu_coffee.html"><li>聚劲咖啡馆</li></a>
+                                    <a href="./stu_expo.html"><li>MBA博览会</li></a>
+                                    <a href="./stu_innovate.html"><li>创新创业</li></a>
+                                    <a href="./stu_life.html"><li>学生故事</li></a>
+                                    <a href="./stu_activity.html"><li>学生活动</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>关于我们</p>
+                                </div>
+                                <ul>
+                                    <a href="./about_us.html"><li>上海</li></a>
+                                    <a href="./about_hk.html"><li>香港</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="f_con02">
+                    <div class="f_inner clearAfter">
+                        
+                        <div class="btnRight clearAfter">
+                            <div class="links">
+                                <select onchange="goToPage(this)">
+                                    <option value="">---友情链接---</option>
+                                    <option value="http://www.fdsm.fudan.edu.cn/AboutUs/index.aspx">复旦大学</option>
+                                    <option value="http://www.fdsm.fudan.edu.cn/fdmba/">管院首页</option>
+                                </select>
+                                <script>
+                                    function goToPage(obj){
+                                        window.open($(obj).val())
+                                    }
+                                </script>
+                            </div>
+                            <div class="sharePic jiathis">
+                                <a class="jiathis_button_tsina">
+                                    <div class="sp_sina"></div>
+                                </a>
+                                <a class="jiathis_button_weixin">
+                                    <div class="sp_weixin"></div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <p class="copy">Copyright 2017 复旦大学管理学院. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--class="jiathis"-->
+            <div id="sidebarMenu">
+                <a href="./info_apply.html">
+                    <div class="siderbar_ele siderbar_ele01">
+                        <div class="sider_bg"></div>
+                        <p>在线申请</p>
+                    </div>
+                </a>
+                <a href="./info_enroll.html">
+                    <div class="siderbar_ele siderbar_ele02">
+                        <div class="sider_bg"></div>
+                        <p>招生活动</p>
+                    </div>
+                </a>
+                <a href="./info_down.html">
+                    <div class="siderbar_ele siderbar_ele03">
+                        <div class="sider_bg"></div>
+                        <p>资料下载</p>
+                    </div>
+                </a>
+                <a href="./info_faq.html">
+                    <div class="siderbar_ele siderbar_ele04">
+                        <div class="sider_bg"></div>
+                        <p>常见问题</p>
+                    </div>
+                </a>
+                <a href="./about_us.html">
+                    <div class="siderbar_ele siderbar_ele05">
+                        <div class="sider_bg"></div>
+                        <p>联系我们</p>
+                    </div>
+                </a>
+                <a class="jiathis_button_tsina">
+                    <div class="siderbar_ele siderbar_ele06">
+                        <div class="sider_bg"></div>
+                        <p>分享</p>
+                    </div>
+                </a>
+                <div class="siderbar_ele siderbar_ele07">
+                    <div class="sider_bg"></div>
+                    <p>TOP</p>
+                </div>
+
+            </div>
+            <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+        
+            <div id="shadow"></div> 
+        </div>	
+		
+        <div class="grid">
+            <div id="slideli" class="three">
+                <div class="slideli_ul">
+                    <div class="s_menu">
+                        <a href="./"><p>首页</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./introduction.html"><p>项目介绍</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./info_enroll.html"><p>招生信息</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./fea_foster.html"><p>项目特色</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./stu_forum.html"><p>学生生活</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./about_us.html"><p>关于我们</p></a>
+                    </div>
+                </div>
+                <div class="slideli_s_lan">
+                    <div class="g_l_search">
+                        <form  action="/site/search" accept-charset="UTF-8" method="get">
+                            <input type="text" onfocus="document.getElementById('note02').style.display='none'" onblur="if(value=='')document.getElementById('note02').style.display='block'" class="searchext" placeholder="" name="keyword">
+                            <div id="note02" class="note2" onclick="document.getElementById('note02').style.display='none'" style="display: block;">搜索...</div>
+                            <!--<input type="submit" class="searchbtn">-->
+                            <input type="button" class="searchbtn">
+                        </form>
+                    </div>
+                    <div class="g_langWrap">
+                        <div class="g_langRel">
+                            <div class="g_langSwitch">English</div>
+                            <div class="g_langHid" style="display: none;">
+                                <p><a href="javascript:void(0)">English</a></p>
+                                <p><a href="javascript:void(0)">中文</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $(".g_langSwitch").click(function(){
+                            if($(this).parent(".g_langRel").hasClass("active")){
+                                $(this).parent(".g_langRel").removeClass("active");
+                                $(this).next(".g_langHid").slideUp();
+                            }else{
+                                $(this).parent(".g_langRel").addClass("active");
+                                $(this).next(".g_langHid").slideDown();
+                            }
+                        })
+                    </script>
+                </div>
+
+
+            </div>
+        </div>
+<script type="text/javascript">  
+
+	function initialize() {  
+
+		var _lat='31.30204';
+		var _lng='121.513131';
+				
+		createMap(_lat,_lng);//创建地图
+		setMapEvent();//设置地图事件
+		addMapControl();//向地图添加控件
+		addMapOverlay(_lat,_lng);//向地图添加覆盖物
+			
+	}  
+
+
+
+
+	function createMap(_lat,_lng){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(_lng,_lat),16);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+        target.addEventListener("click",function(){
+			 target.openInfoWindow(window);
+		});
+		
+    }
+    function addMapOverlay(_lat,_lng){
+      var markers = [
+        {content:"上海市杨浦区国顺路670号",title:"",imageOffset: {width:-23,height:-21},position:{lat:_lat,lng:_lng}}
+      ];
+      for(var index = 0; index < markers.length; index++ ){
+        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",
+		new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        }
+		)});
+        var label = new BMap.Label("123",{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 260,
+          title: '<img src="./images/map_logoicon.png" width="178" height="36"/>',//markers[index].title
+          enableMessage: false,
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        // marker.setLabel(label);//右边红框标记
+        addClickHandler(marker,infoWindow);
+		map.openInfoWindow(infoWindow,point); //开启信息窗口
+        map.addOverlay(marker);
+      };
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+    }
+	
+	
+	
+		   
+		function loadScript() {  
+		  var script = document.createElement("script");  
+		  script.src = "http://api.map.baidu.com/api?v=2.0&ak=Oc3HVk7cf0yuptfBAvyKbD8bUvUA0lHa&callback=initialize";//此为v2.0版本的引用方式  
+		  document.body.appendChild(script);  
+		}  
+		   
+		window.onload = loadScript;  
+		
+</script> 
+        
+	</body>
+</html>
+

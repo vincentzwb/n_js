@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>招生信息</title>
+        <meta name="viewport" content="width=640">
+        <link rel="stylesheet" type="text/css" href="css/global.css" />
+        <link rel="stylesheet" type="text/css" href="css/media.css" />
+
+        <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="js/webfoss.fullscreenstage.js"></script>
+        <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1.js"></script>
+        <script src="./js/waypoints.min.js"></script>
+        <script type="text/javascript" src="js/innerPage.js"></script>
+	</head>
+	<body>
+		
+        <div class="container" id="page">
+            <div id="header">
+                <div class="h_logo">
+                    <div class="h_inner clearAfter">
+                        <div class="logo">
+                            <a href="./">
+                                <img src="images/logo.png">
+                            </a>
+                        </div>
+                        <div class="h_l_r">
+                            <ul>
+                                <li>
+                                    <p>
+                                        <a target="_blank" href="http://www.fdsm.fudan.edu.cn/AboutUs/index.aspx">复旦首页</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                        <a target="_blank" href="http://www.fdsm.fudan.edu.cn/fdmba">管院首页</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                        <a href="./stu_forum.html">学生门户</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                        <a href="./about_us.html">联系我们</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                    </p>
+                                </li>
+                                <li class="langRel">
+                                    <div class="langSwitch">English</div>
+                                    <div class="langHid">
+                                        <p><a href="javascript:void(0)">English</a></p>
+                                        <p><a href="javascript:void(0)">中文</a></p>
+                                    </div>
+                                </li>
+                                <script>
+                                    $(".langSwitch").click(function(){
+                                        if($(this).parent(".langRel").hasClass("active")){
+                                            $(this).parent(".langRel").removeClass("active");
+                                            $(this).next(".langHid").slideUp();
+                                        }else{
+                                            $(this).parent(".langRel").addClass("active");
+                                            $(this).next(".langHid").slideDown();
+                                        }
+                                    })
+                                </script>
+                            </ul>
+                            <div class="h_l_search">
+                                <form id="searchform" action="/site/search" accept-charset="UTF-8" method="get">
+                                    <input type="text" onfocus="document.getElementById('note01').style.display='none'" onblur="if(value=='')document.getElementById('note01').style.display='block'" class="searchext" placeholder="" name="keyword">
+                                    <div id="note01" class="note" onclick="document.getElementById('note01').style.display='none'" style="display: block;">搜索...</div>
+                                    <!--<input type="submit" class="searchbtn">-->
+                                    <input type="button" class="searchbtn">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="nav-toggle">
+                            <div class="icon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_menu">
+                    <div class="h_inner clearAfter">
+                        <div class="h_table">
+                            
+                            <div class="h_t_title">
+                                <p><a href="./">首页</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title">
+                                <p><a href="./introduction.html">项目介绍</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title">
+                                <p><a href="./info_enroll.html">招生信息</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title">
+                                <p><a href="./fea_foster.html">项目特色</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title">
+                                <p><a href="./stu_forum.html">学生生活</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title h_t_title_last">
+                                <p><a href="./about_us.html">关于我们</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rules">
+                <div id="ban">
+                    <img src="images/ban_info.jpg">
+                    <div class="banFont">
+                        <p class="cn">招生信息</p>
+                        <p class="en">ADMISSIONS INFORMATION</p>
+                    </div>
+                </div>
+                <div id="nav">
+                    <div class="navInner clearAfter">
+                        <div class="navFloat clearAfter">
+                            <div class="nav_ele nav_e_icon"><a href="./">首页</a></div>
+                            <div class="nav_ele nav_e_icon"><a href="./info_enroll.html">招生信息</a></div>
+                            <div class="nav_ele nav_e_last">招生简章</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contain_menu">
+                    <div class="main_inner clearAfter">
+                        <div id="content">
+                            <div class="con_padding">
+                                <div class="con_title">
+                                    <p>招生简章</p>
+                                </div>
+                                <div class="con_inner">
+                                    <div class="rules_nav clearAfter">
+                                        <div class="rules_nav_e active">大陆考生</div>
+                                        <div class="rules_nav_e">港澳台考生</div>
+                                        <div class="rules_nav_e">留学生</div>
+                                    </div>
+                                    <div class="rules_cotain">
+                                        <div class="rules_block rules_block01">
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;复旦大学工商管理硕士(MBA)招生简章（2017年入学）</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>复旦大学管理学院是国务院学位委员会和国家教育部1991年确定的首批授予工商管理硕士（MBA）学位的九所院校之一。历经多年的实践和探索，并吸收欧美工商管理教育的先进理念和方法，复旦MBA已经形成了自身的独特优势和品牌价值。2001年，复旦大学MBA项目获得教育部唯一国家级优秀教学成果一等奖。</p>
+                                            <p>&nbsp;</p>
+                                            <p><strong>项目特色</strong></p>
+                                            <div class="manyReact clearAfter">
+                                                <div class="mR_ele mR_ele_3">
+                                                    <div class="mR_Wrap">
+                                                        <div class="mR_Inner">
+                                                            <p  class="m_title">先进的教学模式和雄厚的师资力量</p>
+                                                            <div class="m_line"></div>
+                                                            <div class="m_p">
+                                                                <p>项目教学倡导理论与实践并重、国际化与本土化并行的理念。授课教师兼具深厚学术造诣和丰富管理实践经验，教学体系完整、教学方法先进。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mR_ele mR_ele_3">
+                                                    <div class="mR_Wrap">
+                                                        <div class="mR_Inner">
+                                                            <p  class="m_title">MBA价值最大化平台和广泛深入的校企合作</p>
+                                                            <div class="m_line"></div>
+                                                            <div class="m_p">
+                                                                <p>项目重视学生的成长与发展，开设了内容丰富、形式多样的第二课堂，与全球知名企业共同打造合作平台，增强学生与企业的互动交流。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mR_ele mR_ele_3">
+                                                    <div class="mR_Wrap">
+                                                        <div class="mR_Inner">
+                                                            <p  class="m_title">与海外一流名校紧密多样的国际合作与交流</p>
+                                                            <div class="m_line"></div>
+                                                            <div class="m_p">
+                                                                <p>项目与多所全球顶级商学院开展创新性合作项目与课程，并积极发展国际学生交换项目，以此拓展复旦MBA学生的国际视野。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mR_ele mR_ele_3">
+                                                    <div class="mR_Wrap">
+                                                        <div class="mR_Inner">
+                                                            <p  class="m_title">百年复旦所积淀的多学科优势和深厚人文底蕴</p>
+                                                            <div class="m_line"></div>
+                                                            <div class="m_p">
+                                                                <p>依托百年复旦深厚的文化底蕴，发挥综合性大学的多学科优势，项目开办了知微行远文化之旅系列讲座等活动，遍邀复旦各学科的名师大家主讲，为学生提供与大师面对面的学习机会，全面提升复旦MBA学生素养。　</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mR_ele mR_ele_3">
+                                                    <div class="mR_Wrap">
+                                                        <div class="mR_Inner">
+                                                            <p  class="m_title">遍布世界各地的庞大校友网络和丰富人脉资源</p>
+                                                            <div class="m_line"></div>
+                                                            <div class="m_p">
+                                                                <p>学院目前拥有20000余名校友，其中有近5000名MBA校友。他们遍及全国乃至世界各地，在众多领域中发挥着重要作用，在实现个人价值的同时发扬光大了母校的传统和荣誉，他们也以各种方式为复旦MBA学生提供了多方位的切实有力的支持。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mR_ele mR_ele_3">
+                                                    <div class="mR_Wrap">
+                                                        <div class="mR_Inner">
+                                                            <p  class="m_title">倡导职业精神和社会责任的复旦MBA文化　</p>
+                                                            <div class="m_line"></div>
+                                                            <div class="m_p">
+                                                                <p>项目自创立之初，就提出了复旦MBA学生应勇于承担社会和民族发展的重任的要求，勇担社会责任是复旦MBA学生入学的第一课。培养过程始终强调学生应将个人发展融入社会和国家的发展之中，以真正成为职业化的管理人才和社会发展的中流砥柱。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                            <p><strong>复旦大学MBA项目</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>2016年计划招收500名学生(不包含企业合作项目学生）。任课教师均为管理学院和其他院系有丰富理论知识和实践经验的教授担任。我校MBA开设国际经营、市场营销、财务管理、信息管理与电子商务、物流管理、创业与创业投资、金融机构管理、会计、体育产业、医院管理等众多专业选修课程。</p>　
+                                            <p>学生修满规定学分，完成硕士论文并通过答辩，可获得复旦大学硕士研究生毕业证书和工商管理硕士学位证书。</p>
+                                            <p>&nbsp;</p>
+                                            <div class="m_ul_li">
+                                                <p><strong>报考条件</strong></p>
+                                                <p>&nbsp;</p>
+                                                <p>1、算至入学时，本科毕业后有三年及三年以上工作经验者；大专毕业后有五年及五年以上工作经验者；已获硕士学位或博士学位并有二年及二年以上工作经验者（如有变化，以教育部规定为准）。　</p>
+                                                <p>&nbsp;</p>
+                                                <p>2、参加由复旦大学MBA项目组织的预审，即复旦MBA项目要求报考的考生全员参加预审，也就是说参加联考前就要进行背景评估面试，联考后不再安排面试（详见预审流程）。</p>
+                                            </div>
+                                            <p>&nbsp;</p>
+                                            <div class="m_ul_li">
+                                                <p><strong>学制</strong></p>
+                                                <p>&nbsp;</p>
+                                                <p>在职学习，学制二年半</p>
+                                                <p>&nbsp;</p>
+                                                <p>每周一个工作日的晚上及双休日的一天上课；另设一个全周末班，非沪籍学生优先。</p>
+                                            </div>
+                                            <p>&nbsp;</p>
+                                            <div class="hr"></div>
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;复旦大学国际MBA项目（复旦大学与美国麻省理工学院斯隆管理学院合作项目）</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>2016年计划招收100名学生（含S3 亚洲MBA）。复旦大学国际MBA项目初创于1996年，由美国麻省理工学院斯隆管理学院（MIT Sloan）与复旦大学管理学院联合创办。项目强调国际化特色，致力于培养既具全球经济视野，又深谙中国国情的国际化管理精英。</p>
+                                            <p>&nbsp;</p>
+                                            <p><strong>项目特色</strong></p>
+                                            <div class="manyReact clearAfter">
+                                                <div class="mR_ele mR_ele_3">
+                                                    <div class="mR_Wrap">
+                                                        <div class="mR_Inner">
+                                                            <p  class="m_title">强大的国际化师资</p>
+                                                            <div class="m_line"></div>
+                                                            <div class="m_p">
+                                                                <p>任课教师拥有深厚的学术底蕴与丰富的教学经验，其中30%-40%为国际师资。此外，MIT Sloan教授、行业资深人士和企业高管也应邀授课，帮助学生开阔视野，全面学习前沿管理理论与知识。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mR_ele mR_ele_3">
+                                                    <div class="mR_Wrap">
+                                                        <div class="mR_Inner">
+                                                            <p  class="m_title">与MIT Sloan同步的课程教学</p>
+                                                            <div class="m_line"></div>
+                                                            <div class="m_p">
+                                                                <p>项目为全英文授课、全日制学习，全面吸收世界先进的管理教学内容和方法，其课程设计、教材案例等课程资料均与MIT Sloan保持同步。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mR_ele mR_ele_3">
+                                                    <div class="mR_Wrap">
+                                                        <div class="mR_Inner">
+                                                            <p  class="m_title">多样化的管理实践活动</p>
+                                                            <div class="m_line"></div>
+                                                            <div class="m_p">
+                                                                <p>项目与沃顿商学院、MIT Sloan分别开设商业咨询项目，并专设创业大赛、案例开发、商业模拟等多样化的管理实践活动，鼓励学生积极参与，全方位提高管理实践能力。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mR_ele mR_ele_3">
+                                                    <div class="mR_Wrap">
+                                                        <div class="mR_Inner">
+                                                            <p  class="m_title">广覆盖的国际交换项目</p>
+                                                            <div class="m_line"></div>
+                                                            <div class="m_p">
+                                                                <p>作为PIM组织成员之一，学院为项目学生提供了遍及全球的国际交换学习机会。每年有40余所国际知名商学院提供超过100名的国际交换名额。国际交换学习有助于学生丰富阅历、提高跨文化沟通能力。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mR_ele mR_ele_3">
+                                                    <div class="mR_Wrap">
+                                                        <div class="mR_Inner">
+                                                            <p  class="m_title">全方位的职业发展服务</p>
+                                                            <div class="m_line"></div>
+                                                            <div class="m_p">
+                                                                <p>学院最早在中国开展MBA学生职业发展计划。学院职业发展中心为MBA学生提供全程职业发展指导和就业服务。其中职业发展指导包括职业规划、职业课程、一对一咨询等形式，旨在帮助学生合理规划职业发展，提高职业竞争力。</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <p>&nbsp;</p>
+                                            <div class="m_ul_li">
+                                                <p><strong>报考条件</strong></p>
+                                                <p>&nbsp;</p>
+                                                <p>1、要求报考者拥有学士学位或学士以上学位；</p>
+                                                <p>2、三年以上工作经验（研究生需两年以上工作经验）；</p>　
+                                                <p>3、参加由复旦大学MBA项目组织的预审，并申请复旦大学MBA项目（详见预审流程）</p>
+                                            </div>
+                                            <p>&nbsp;</p>
+                                            <div class="m_ul_li">
+                                                <p><strong>学制</strong></p>
+                                                <p>&nbsp;</p>
+                                                <p>全脱产学习，周一至周五上课，学生可转户口档案，可申请住宿，学制二年。</p>
+                                            </div>
+                                            <p>&nbsp;</p>
+                                            <div class="hr"></div>
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;S<sup>3</sup> 亚洲MBA项目</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>复旦S3 亚洲MBA项目于2008年2月正式成立，是由复旦大学管理学院、高丽大学商学院和新加坡国立大学商学院合作开设的双学位项目。学生将分别在上海、首尔、新加坡三座国际化都市与来自全球逾10个国家和地区的同学共同生活、学习，拓展全球视野，理解和把握亚洲经济的深刻变化，应对国际化竞争的职业发展要求。</p>
+
+                                            <p>&nbsp;</p>
+                                            <div class="m_ul_li">
+                                                <p><strong>报考条件</strong></p>
+                                                <p>&nbsp;</p>
+                                                <p>1、中国护照持有者（包括香港、澳门和台湾居民）；　</p>
+                                                <p>2、要求报考者拥有学士学位或学士以上学位；　</p>
+                                                <p>3、三年以上工作经验（研究生需两年以上工作经验）；　</p>
+                                                <p>4、参加由复旦大学MBA项目组织的预审，并申请复旦大学MBA项目（详见预审流程）</p>
+                                            </div>
+                                            <p>&nbsp;</p>
+                                            <div class="m_ul_li">
+                                                <p><strong>学制</strong></p>
+                                                <p>&nbsp;</p>
+                                                <p>全脱产学习两年，周一至周五上课。全英文授课。学生将分别在复旦大学、高丽大学和新加坡国立大学完成一个学期的学习。</p>
+                                                <p>&nbsp;</p>
+                                                <p>学生完成规定课程学习，考试成绩合格，并在第四学期通过论文答辩，可获得复旦大学研究生毕业证书和工商管理硕士学位证书，同时可以申请韩国高丽大学或新加坡国立大学工商管理硕士学位证书，以及三所大学联合颁发的S3 Asia MBA项目学习证书。　</p>
+                                            </div>
+                                            <p>&nbsp;</p>
+                                            <div class="m_ul_li">
+                                                <p><strong>报考流程</strong></p>
+                                                <p>&nbsp;</p>
+                                                <p>S3 亚洲MBA项目中国大陆及港澳台学生报考流程与复旦MBA项目同步，咨询及申请与复旦MBA项目招生工作同时进行，请关注复旦MBA项目最新招生信息。　</p>
+                                            </div>
+                                            <p>&nbsp;</p>
+                                            <div class="hr"></div>
+                                            <p>&nbsp;</p>
+
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;录取原则</strong></p>
+                                            <p>&nbsp;</p>
+                                            <div class="m_ul_li">
+                                                <p>复旦大学MBA项目将根据考生的笔试、面试、背景评估三方面综合考量考生各方面能力后择优录取。所有考生需参加当年预审方有录取资格。</p>　
+                                                <p>&nbsp;</p>
+                                                <p>预审流程及方案详见：<a target="_blank" href="javascript:void(0)">复旦大学MBA项目预审流程</a></p>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="rules_block rules_block02">
+
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;报名资格</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>•&nbsp;香港、澳门或台湾永久居民；</p>
+                                            <p>•&nbsp;须具有与内地（祖国大陆）学士学位相当的学位或同等学历，至少三年全职工作经验；</p>
+                                            <p>•&nbsp;品德良好、身体健康；</p>
+                                            <p>•&nbsp;报名时须提交毕业证书和学位证书副本，以及由两名熟悉申请人工作及能力的资深人士对推荐人的书面推荐材料。</p>
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;如何申请</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>申请人必须参加项目面试和港澳台联考笔试。</p>
+                                            <p>面试申请：</p>
+                                            <p>通过：<a target="_blank" href="http://apply.fdsm.fudan.edu.cn/application/admissions/program/fdmba-f">http://apply.fdsm.fudan.edu.cn/application/admissions/program/fdmba-f</a> 申请。填写完整资料，并上传相关附件及推荐信后，选择面试轮次：“留学生（中文在职）申请轮次”及“留学生（中文在职）面试”。</p>
+
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;笔试报名时间</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>2016年12月1日至12月15日，全天24小时接受网上报名。</p>
+
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;笔试报名方式</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>2017年面向港澳台地区研究生招生报名包括网上报名和现场确认两个阶段。所有参加港澳台研究生招生考试的考生均须进行网上报名，并现场确认网报信息和缴费。</p>
+                                            <p>受教育部委托，下列4个报考点负责港澳台研究生招生宣传、报名和初试的组织工作。</p>
+
+                                            <div class="manyReact clearAfter">
+                                                <div class="mR_ele mR_ele_2">
+                                                    <div class="mR_Wrap">
+                                                        <div class="mR_Inner">
+                                                            <p  class="m_title">北京理工大学（研究生院）</p>
+                                                            <div class="m_line"></div>
+                                                            <div class="m_p m_p_contact">
+                                                                <p><span>联系地址：</span>北京海淀区中关村南大街5号</p>
+                                                                <p><span>邮政编码：</span>100081</p>
+                                                                <p><span>联系电话：</span>（010）68945819</p>
+                                                                <p><span>图文传真：</span>（010）68945112</p>
+                                                                <p><span>联&nbsp;系&nbsp;人&nbsp;：</span>秦彦超</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mR_ele mR_ele_2">
+                                                    <div class="mR_Wrap">
+                                                        <div class="mR_Inner">
+                                                            <p  class="m_title">广东省教育考试院</p>
+                                                            <div class="m_line"></div>
+                                                            <div class="m_p m_p_contact">
+                                                                <p><span>联系地址：</span>广州市中山大道69号</p>
+                                                                <p><span>邮政编码：</span>510631</p>
+                                                                <p><span>联系电话：</span>（020）38627813</p>
+                                                                <p><span>图文传真：</span>（020）38627826</p>
+                                                                <p><span>联&nbsp;系&nbsp;人&nbsp;：</span>曹刚</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               
+                                               <div class="mR_ele mR_ele_2">
+                                                    <div class="mR_Wrap">
+                                                        <div class="mR_Inner">
+                                                            <p  class="m_title">京港学术交流中心</p>
+                                                            <div class="m_line"></div>
+                                                            <div class="m_p m_p_contact">
+                                                                <p><span>联系地址：</span>香港北角英皇道83号联合出版大厦14楼1404室</p>
+                                                                <p><span>联系电话：</span>（00852）28936355</p>
+                                                                <p><span>图文传真：</span>（00852）28345519</p>
+                                                                <p><span>联&nbsp;系&nbsp;人&nbsp;：</span>钟惠娟</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mR_ele mR_ele_2">
+                                                    <div class="mR_Wrap">
+                                                        <div class="mR_Inner">
+                                                            <p  class="m_title">澳门高等教育辅助办公室</p>
+                                                            <div class="m_line"></div>
+                                                            <div class="m_p m_p_contact">
+                                                                <p><span>联系地址：</span>澳门罗理基博士大马路614A-640号龙成大厦5-7楼</p>
+                                                                <p><span>联系电话：</span>（00853）28345403</p>
+                                                                <p><span>图文传真：</span>（00853）28701076</p>
+                                                                <p><span>联&nbsp;系&nbsp;人&nbsp;：</span>卢丽萍</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                            <p>&nbsp;</p>
+                                            <p>注：符合报考条件的考生可任选一地报名,有关报考的具体事项可直接向报名点咨询。</p>
+                                            <p>&nbsp;</p>
+
+
+                                            <p><strong>网上报名要求</strong></p>
+                                            <p>&nbsp;</p>
+                                            <div class="m_ul_li">
+                                                <p>考生应在规定报名时间登录“面向港澳台招生信息网”浏览报考须知，并按教育部、报考点以及报考招生单位的网上公告要求报名并上传电子照片。报名期间，考生可自行修改网报信息。逾期不再补报。</p>
+                                            </div>
+                                            <div class="m_ul_li">
+                                                <p>考生报名时只填报一个招生单位的一个专业。</p>
+                                            </div>
+                                            <div class="m_ul_li">
+                                                <p>考生应按要求准确填写个人网上报名信息并提供真实材料。考生因网报信息填写错误、填报虚假信息而造成不能考试或录取的，后果由考生本人承担。</p>
+                                            </div>
+
+                                            <p>&nbsp;</p>
+                                            <p><strong>现场确认要求</strong></p>
+                                            <p>&nbsp;</p>
+                                            <div class="m_ul_li">
+                                                <p>所有考生均应按报考点要求对报名信息进行现场确认，逾期不再补办。</p>
+                                            </div>
+                                            <div class="m_ul_li">
+                                                <p>现场确认时应提交以下报名材料，由报考点工作人员进行核对：</p>
+                                                <p>①网上报名编号；</p>
+                                                <p>②有效身份证件；</p>
+                                                <p>③学士学位证书或硕士学位证书(应届毕业生可于录取前补交，但须提交应届在读证明原件)或同等学历文凭</p>
+                                            </div>
+                                            <div class="m_ul_li">
+                                                <p>考生应对本人网上报名信息和电子照片进行认真核对并确认。报名信息经考生确认后一律不作修改，因考生填写错误引起的一切后果由其自行承担。</p>
+                                            </div>
+                                            <div class="m_ul_li">
+                                                <p>考生按报考点要求缴纳报考费。</p>
+                                            </div>
+                                            <div class="m_ul_li">
+                                                <p>报考点打印《考生报名信息确认表》，考生签字确认后交报考点留存。</p>
+                                            </div>
+                                            <div class="m_ul_li">
+                                                <p>考生按报考点要求提交相关报名材料副本。</p>
+                                            </div>
+
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;考试科目</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>报考工商管理专业学位硕士（MBA)研究生，考试科目为外国语(满分值为100分)及管理类综合能力(满分值为200分)。</p>
+                                            <p>初试均为笔试。初试每科考试时间为3小时。</p>
+
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;下载打印准考证</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>考生下载打印准考证时间：2017年3月20日至4月10日</p>
+
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;初试地点</strong></p>
+                                            <p>&nbsp;</p>
+                                            <div class="m_line4 clearAfter">
+                                                <div class="m_l4_ele">
+                                                    <div class="m_l4_inner">
+                                                        <p>北京市</p>
+                                                        <div class="m_l4_line_wrap">
+                                                            <div class="m_l4_line"></div>
+                                                        </div>
+                                                        <p>北京理工大学安排</p>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="m_l4_ele">
+                                                    <div class="m_l4_inner">
+                                                        <p>广州市</p>
+                                                        <div class="m_l4_line_wrap">
+                                                            <div class="m_l4_line"></div>
+                                                        </div>
+                                                        <p>广州省教育考试院安排</p>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="m_l4_ele">
+                                                    <div class="m_l4_inner">
+                                                        <p>香港</p>
+                                                        <div class="m_l4_line_wrap">
+                                                            <div class="m_l4_line"></div>
+                                                        </div>
+                                                        <p>京港学术交流中心安排</p>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="m_l4_ele">
+                                                    <div class="m_l4_inner">
+                                                        <p>澳门</p>
+                                                        <div class="m_l4_line_wrap">
+                                                            <div class="m_l4_line"></div>
+                                                        </div>
+                                                        <p>澳门高等教育辅助办公室安排</p>
+                                                    </div>
+
+                                                </div>
+
+
+
+                                            </div>
+
+
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;初试时间</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>2017年4月8日至9日。时间以北京时间为准，上午9：00-12：00，下午14：30-17：30。</p>
+
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;查询成绩</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>初试成绩由招生单位通知考。</p>
+
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;面试考试时间及地点</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>面试时间及地点：由我校另行通知。</p>
+                                            <p>报名港澳台联考同时，请在复旦MBA项目官网上递交网上申请，以便安排面试。</p>
+
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;项目学制与授予学位</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>港澳台学生可申请工商管理硕士或国际工商管理硕士，项目学制与授予学位同境内申请者。</p>
+
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;复旦大学（代码：10246）</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>咨询电话：复旦MBA项目，021-65643935</p>
+
+                                        </div>
+
+
+                                        <div class="rules_block rules_block03">
+
+                                            <p>复旦大学MBA项目外国留学生（MBA复旦大学管理学院是国务院学位委员会和国家教育部1991年确定的首批授予工商管理硕士（MBA）学位的九所院校之一。历经多年的实践和探索，并吸收欧美工商管理教育的先进理念，复旦MBA已经形成了自身的独特优势和品牌价值。2001年，复旦大学MBA项目获得教育部唯一国家级优秀教学成果一等奖。</p>
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;申请条件</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>大学本科毕业后，有三年或三年以上实际工作经验；</p>
+                                            <p>身体健康的外国籍公民，年龄40周岁以下。</p>
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;申请时间</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>申请截止时间为入学当年的5月31日。</p>
+
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;如何申请</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>通过：<a target="_blank" href="http://apply.fdsm.fudan.edu.cn/application/admissions/program/fdmba-f">http://apply.fdsm.fudan.edu.cn/application/admissions/program/fdmba-f</a>申请。填写完整资料，并上传相关附件及推荐信后，选择面试轮次：“留学生（中文在职）申请轮次”及“留学生（中文在职）面试”。</p>
+
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;申请材料</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>上传的材料中，请注意以下事项：</p>
+                                            <p>&nbsp;</p>
+                                            <div class="m_ul_li">
+                                                <p>所有材料请彩色扫描后上传；</p>
+                                            </div>
+                                            <div class="m_ul_li">
+                                                <p>中、英文以外文本的证书需提供公证过的中文或英文翻译件；</p>
+                                            </div>
+                                            <div class="m_ul_li">
+                                                <p>成绩单请选择本科阶段全部课程的成绩单原件或公证件，中、英文以外文本的成绩单还需提供公证过的中文或英文翻译件；</p>
+                                            </div>
+                                            <div class="m_ul_li">
+                                                <p>请在其他材料中上传HSK六级证书；</p>
+                                            </div>
+                                            <div class="m_ul_li">
+                                                <p>身份证项，请上传护照（有效期内的个人护照）扫描件；</p>
+                                            </div>
+
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;录取</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>申请材料经审核后，通过笔试和面试，成绩合格后予以录取。</p>　
+                                            <p>笔试、面试具体时间和地点将单独通知。</p>
+                                            <p>录取结果将于6月中下旬在申请系统内公布，《录取通知书》将于7月由复旦大学留学生办寄发。</p>
+
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;笔试科目</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>综合能力（数学、语文、逻辑）笔试。</p>
+
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;入学时间</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>9月，具体时间以《录取通知书》为准。</p>
+
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;学制学位</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>学制为两年半：学习期间实行半脱产，上课时间为每周1个工作日的晚上加一个双休日的一天。（上课时间为周末两天的班级需要单独申请。)</p>
+                                            <p>学生修满规定学分，成绩合格并通过学位论文答辩者，颁发复旦大学工商管理硕士毕业证书和学位证书。</p>
+
+                                            <p>&nbsp;</p>
+                                            <p><strong class="color_00448b">|&nbsp;&nbsp;学费</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p>2017年入学总学费为人民币339，800元（含书费和资料费）。学费分两年交清。</p>
+
+                                            <a href="javascript:void(0)">
+                                                <div class="m_btn">
+                                                    <p>复旦大学国际MBA项目外国留学生招生简章</p>
+                                                </div>
+                                            </a>
+                                            <div class="manyReact clearAfter">
+                                                <div class="mR_ele mR_ele_2">
+                                                    <div class="mR_Wrap">
+                                                        <div class="mR_Inner">
+                                                            <p  class="m_title">复旦大学管理学院MBA项目</p>
+                                                            <div class="m_line"></div>
+                                                            <div class="m_p m_p_contact">
+                                                                <p><span>联系地址：</span>中国上海国顺路670号史带楼709室</p>
+                                                                <p><span>邮政编码：</span>200433</p>
+                                                                <p><span>联系电话：</span>86-21-65643935，55664888</p>
+                                                                <p><span>传&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;真：</span>86-21-55664810</p>
+                                                                <p><span>电子邮件：</span>mba@fudan.edu.cn</p>
+                                                                <p><span>网&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</span>http://www.fdsm.fudan.edu.cn/fdmba</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mR_ele mR_ele_2">
+                                                    <div class="mR_Wrap">
+                                                        <div class="mR_Inner">
+                                                            <p  class="m_title">复旦大学留学生办公室招生部　</p>
+                                                            <div class="m_line"></div>                                                        
+                                                            <div class="m_p m_p_contact">
+                                                                <p><span>联系地址：</span>中国上海邯郸路220号　</p>
+                                                                <p><span>邮政编码：</span>200433</p>
+                                                                <p><span>联系电话：</span>86-21-65642258/65117628</p>
+                                                                <p><span>传&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;真：</span>86-21-65117298</p>
+                                                                <p><span>电子邮件：</span>fso@fudan.edu.cn</p>
+                                                                <p><span>网&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</span>http://www.fso.fudan.edu.cn</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              
+
+
+
+                                            </div>
+
+
+
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="sidebar">
+                            <div class="sidemenu">
+                                <h3>招生信息</h3>
+                                <ul>
+                                    <a href="./info_enroll.html">
+                                        <li>
+                                            <p>招生活动</p>
+                                        </li>
+                                    </a>
+                                    <a href="./info_apply.html">
+                                        <li>
+                                            <p>在线申请</p>
+                                        </li>
+                                    </a>
+                                    <a href="./info_rules.html">
+                                        <li class="active">
+                                            <p>招生简章</p>
+                                        </li>
+                                    </a>
+                                    <a href="./info_process.html">
+                                        <li>
+                                            <p>申请流程</p>
+                                        </li>
+                                    </a>
+                                    <a href="./info_tuition.html">
+                                        <li>
+                                            <p>学费与资助</p>
+                                        </li>
+                                    </a>
+                                    <a href="./info_down.html">
+                                        <li>
+                                            <p>资料下载</p>
+                                        </li>
+                                    </a>
+                                    <a href="./info_faq.html">
+                                        <li>
+                                            <p>常见问题</p>
+                                        </li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="pro_block">
+                                <div class="proInner">
+                                    <div class="pro_con">
+                                        <h3>项目介绍</h3>
+                                        <div class="pro_detal">
+                                            <div class="pro_slider">
+                                                <div class="pro_ele">
+                                                    <div class="proImg">
+                                                        <img src="images/proImg01_01.jpg" />
+                                                    </div>
+                                                    <div class="proTitle">
+                                                        <p class="h">复旦MBA项目</p>
+                                                        <p class="p_detail">复旦MBA项目以中文授课为主，课程设置兼顾国际化和本土化，师资本土实践经验更加丰富；</p>
+                                                    </div>
+                                                </div>
+                                                <div class="pro_ele">
+                                                    <div class="proImg">
+                                                        <img src="images/proImg01_02.jpg" />
+                                                    </div>
+                                                    <div class="proTitle">
+                                                        <p class="h">复旦国际MBA项目</p>
+                                                        <p class="p_detail">复旦大学国际MBA项目由复旦大学管理学院和美国麻省理工学院斯隆管理学院（MIT Sloan）于1996年合作设立。</p>
+                                                    </div>
+                                                </div>
+                                                <div class="pro_ele">
+                                                    <div class="proImg">
+                                                        <img src="images/proImg01_03.jpg" />
+                                                    </div>
+                                                    <div class="proTitle">
+                                                        <p class="h">复旦S3Asia MBA项目</p>
+                                                        <p class="p_detail">S3 Asia MBA项目是由复旦大学管理学院、高丽大学商学院和新加坡国立大学商学院在2008年合作开设的双学位项目。</p>
+                                                    </div>
+                                                </div>
+                                                <div class="pro_ele">
+                                                    <div class="proImg">
+                                                        <img src="images/proImg01_04.jpg" />
+                                                    </div>
+                                                    <div class="proTitle">
+                                                        <p class="h">复旦中文MBA香港班</p>
+                                                        <p class="p_detail">复旦MBA项目以中文授课为主，课程设置兼顾国际化和本土化，师资本土实践经验更加丰富；</p>
+                                                    </div>
+                                                </div>
+                                                <div class="pro_ele">
+                                                    <div class="proImg">
+                                                        <img src="images/proImg01_05.jpg" />
+                                                    </div>
+                                                    <div class="proTitle">
+                                                        <p class="h">本科生菁英计划</p>
+                                                        <p class="p_detail">复旦MBA项目以中文授课为主，课程设置兼顾国际化和本土化，师资本土实践经验更加丰富...</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="pro-pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer">
+                <div class="f_con01">
+                    <div class="f_inner clearAfter">
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>项目介绍</p>
+                                </div>
+                                <ul>
+                                    <a href="./project_history.html"><li>项目历程与荣誉</li></a>
+                                    <a href="./project_mba.html"><li>复旦MBA项目</li></a>
+                                    <a href="./project_international.html"><li>复旦国际MBA项目</li></a>
+                                    <a href="./project_asia.html"><li>复旦S3Asia MBA项目</li></a>
+                                    <a href="./project_hk.html"><li>复旦中文MBA香港班</li></a>
+                                    <a href="./project_college.html"><li>本科生菁英计划</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>招生信息</p>
+                                </div>
+                                <ul>
+                                    <a href="./info_enroll.html"><li>招生活动</li></a>
+                                    <a href="./info_apply.html"><li>在线申请</li></a>
+                                    <a href="./info_rules.html"><li>招生简章</li></a>
+                                    <a href="./info_process.html"><li>申请流程</li></a>
+                                    <a href="./info_tuition.html"><li>学费与资助</li></a>
+                                    <a href="./info_down.html"><li>资料下载</li></a>
+                                    <a href="./info_faq.html"><li>常见问题</li></a>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>项目特色</p>
+                                </div>
+                                <ul>
+                                    <a href="./fea_foster.html"><li>培养体系</li></a>
+                                    <a href="./fea_set.html"><li>课程设置</li></a>
+                                    <a href="./fea_view.html"><li>国际视野</li></a>
+                                    <a href="./fea_study.html"><li>行动学习</li></a>
+                                    <a href="./fea_career.html"><li>职业发展</li></a>
+                                    <a href="./fea_service.html"><li>校友服务</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>学生生活</p>
+                                </div>
+                                <ul>
+                                    <a href="./stu_forum.html"><li>论坛讲堂</li></a>
+                                    <a href="./stu_club.html"><li>MBA俱乐部</li></a>
+                                    <a href="./stu_coffee.html"><li>聚劲咖啡馆</li></a>
+                                    <a href="./stu_expo.html"><li>MBA博览会</li></a>
+                                    <a href="./stu_innovate.html"><li>创新创业</li></a>
+                                    <a href="./stu_life.html"><li>学生故事</li></a>
+                                    <a href="./stu_activity.html"><li>学生活动</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>关于我们</p>
+                                </div>
+                                <ul>
+                                    <a href="./about_us.html"><li>上海</li></a>
+                                    <a href="./about_hk.html"><li>香港</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="f_con02">
+                    <div class="f_inner clearAfter">
+                        
+                        <div class="btnRight clearAfter">
+                            <div class="links">
+                                <select onchange="goToPage(this)">
+                                    <option value="">---友情链接---</option>
+                                    <option value="http://www.fdsm.fudan.edu.cn/AboutUs/index.aspx">复旦大学</option>
+                                    <option value="http://www.fdsm.fudan.edu.cn/fdmba/">管院首页</option>
+                                </select>
+                                <script>
+                                    function goToPage(obj){
+                                        window.open($(obj).val())
+                                    }
+                                </script>
+                            </div>
+                            <div class="sharePic jiathis">
+                                <a class="jiathis_button_tsina">
+                                    <div class="sp_sina"></div>
+                                </a>
+                                <a class="jiathis_button_weixin">
+                                    <div class="sp_weixin"></div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <p class="copy">Copyright 2017 复旦大学管理学院. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+
+             <!--class="jiathis"-->
+            <div id="sidebarMenu">
+                <a href="./info_apply.html">
+                    <div class="siderbar_ele siderbar_ele01">
+                        <div class="sider_bg"></div>
+                        <p>在线申请</p>
+                    </div>
+                </a>
+                <a href="./info_enroll.html">
+                    <div class="siderbar_ele siderbar_ele02">
+                        <div class="sider_bg"></div>
+                        <p>招生活动</p>
+                    </div>
+                </a>
+                <a href="./info_down.html">
+                    <div class="siderbar_ele siderbar_ele03">
+                        <div class="sider_bg"></div>
+                        <p>资料下载</p>
+                    </div>
+                </a>
+                <a href="./info_faq.html">
+                    <div class="siderbar_ele siderbar_ele04">
+                        <div class="sider_bg"></div>
+                        <p>常见问题</p>
+                    </div>
+                </a>
+                <a href="./about_us.html">
+                    <div class="siderbar_ele siderbar_ele05">
+                        <div class="sider_bg"></div>
+                        <p>联系我们</p>
+                    </div>
+                </a>
+                <a class="jiathis_button_tsina">
+                    <div class="siderbar_ele siderbar_ele06">
+                        <div class="sider_bg"></div>
+                        <p>分享</p>
+                    </div>
+                </a>
+                <div class="siderbar_ele siderbar_ele07">
+                    <div class="sider_bg"></div>
+                    <p>TOP</p>
+                </div>
+
+            </div>
+            <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+        
+            <div id="shadow"></div>
+        </div>	
+        <div class="grid">
+            <div id="slideli" class="three">
+                <div class="slideli_ul">
+                    <div class="s_menu">
+                        <a href="./"><p>首页</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./introduction.html"><p>项目介绍</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./info_enroll.html"><p>招生信息</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./fea_foster.html"><p>项目特色</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./stu_forum.html"><p>学生生活</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./about_us.html"><p>关于我们</p></a>
+                    </div>
+                </div>
+                <div class="slideli_s_lan">
+                    <div class="g_l_search">
+                        <form  action="/site/search" accept-charset="UTF-8" method="get">
+                            <input type="text" onfocus="document.getElementById('note02').style.display='none'" onblur="if(value=='')document.getElementById('note02').style.display='block'" class="searchext" placeholder="" name="keyword">
+                            <div id="note02" class="note2" onclick="document.getElementById('note02').style.display='none'" style="display: block;">搜索...</div>
+                            <!--<input type="submit" class="searchbtn">-->
+                            <input type="button" class="searchbtn">
+                        </form>
+                    </div>
+                    <div class="g_langWrap">
+                        <div class="g_langRel">
+                            <div class="g_langSwitch">English</div>
+                            <div class="g_langHid" style="display: none;">
+                                <p><a href="javascript:void(0)">English</a></p>
+                                <p><a href="javascript:void(0)">中文</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $(".g_langSwitch").click(function(){
+                            if($(this).parent(".g_langRel").hasClass("active")){
+                                $(this).parent(".g_langRel").removeClass("active");
+                                $(this).next(".g_langHid").slideUp();
+                            }else{
+                                $(this).parent(".g_langRel").addClass("active");
+                                $(this).next(".g_langHid").slideDown();
+                            }
+                        })
+                    </script>
+                </div>
+
+
+            </div>
+        </div>
+        <script>
+            $(function(){
+                $(".rules_nav_e").click(function(){
+                    var _index=$(this).index();
+                    $(this).siblings().removeClass("active");
+                    $(this).addClass("active");
+
+                    $(".rules_block").css({display:"none"});
+                    $(".rules_block").eq(_index).css({display:"block"});
+                    $(window).fssResize();
+                })
+
+
+            })
+        </script>
+	</body>
+</html>
+

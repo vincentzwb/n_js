@@ -1,0 +1,884 @@
+@media screen and (max-width:1440px) {
+    #tuition .tuition_nav_e.active{
+        border-bottom: 1px solid #e0e0e0;
+        background: transparent;
+    }
+    #tuition .tuition_nav_e:hover{
+        border-bottom: 1px solid #e0e0e0;
+        background: transparent;
+    }
+    #tuition .tuition_nav_e{
+        width: auto;
+        padding:0 16px;
+        margin-bottom: 4px;
+    }
+    #tuition .tuition_p_nav{
+        border: none;
+        height: auto;
+    }
+    #contain_menu{
+        width: 960px;
+    }
+    #ban .banFont{
+        width:960px;
+    }
+    #nav .navInner{
+        width: 960px;
+    }
+    #header .h_inner{
+        width: 960px;
+    }
+    #home .banner_silder .font {
+        width: 760px;
+    }
+    #home .banner_silder .f_w{
+        padding-left: 69px;
+    }
+    #home .banner_silder .b_e_inner{
+        width: 247px;
+    }
+    #home .sec_inner {
+        width: 960px;
+    }
+    #home .section01 .l_left{
+        width: 64%;
+    }
+    #home .section01 .l_right {
+        width: 36%;
+    }
+    #footer .f_inner{
+        width: 960px;
+    }
+
+
+}
+
+@media screen and (max-width:1000px) {
+    #content .con_padding{
+        padding-left: 0px;
+    }
+    #faq .faq_nav{
+        height: auto;
+        border-bottom:none;
+    }
+    #faq .faq_nav_e.active{
+        border-bottom: 1px solid #e0e0e0;;
+        background: transparent;
+    }
+    #faq .faq_nav_e:hover{
+        border-bottom: 1px solid #e0e0e0;;
+        background: transparent;
+    }
+    #faq .faq_nav_e{
+        margin-bottom:4px;
+    }
+    #sidebar .newsblock{
+        display: none;
+    }
+    #content,#sidebar{
+        width: auto;
+        float: none;
+    }
+    #sidebar{
+        padding-bottom: 0px;
+    }
+    #sidebar .pro_block{
+        display: none;
+    }
+    #ban .banFont{
+        width: 94%;
+    }
+    #nav .navInner{
+        width: 94%;
+    }
+    #contain_menu{
+        width: 94%;
+    }
+    #home .banner_silder .pagination_01{
+        display: none;
+    }
+    #home .banner_silder .pagination_02{
+        display: block;
+    }
+    #home .banner_silder .banner-pagination{
+        position: absolute;
+        left: 0;
+        bottom: 133px;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+    }
+    #home .banner_silder .banner-pagination a span{
+        display: inline-block;
+        height: 0;
+        font-size: 0;
+        overflow: hidden;
+        text-indent: 1000px;
+        width: 26px;
+        height: 25px;
+        margin: 0 3px;
+        background: #fff;
+        background: url(../images/un_ban_disc.png) no-repeat center center;
+    }
+    #home .banner_silder .banner-pagination a.selected span{
+        background: url(../images/sel_ban_disc.png) no-repeat center center;
+    }
+
+
+
+
+
+    #home .manyEle_mobile .m_m_s_left{
+        width: 34px;
+        height: 34px;
+        background: url(../images/m_m_s_left.png) no-repeat center center;
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        cursor: pointer;
+    }
+    #home .manyEle_mobile .m_m_s_right{
+        width: 34px;
+        height: 34px;
+        background: url(../images/m_m_s_right.png) no-repeat center center;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        cursor: pointer;
+    }
+     #home .manyEle_mobile{
+        position: relative;
+    }
+    #home .sec04_list .manyEle{
+        display: none;
+    }
+    #home .sec04_list .manyEle_mobile{
+        display: block;
+    }
+    #home .sec04_list .manyEle_mobile .m_ele{
+        width: 101px;
+    }
+    #footer .f_con02 .sharePic{
+        float: none;
+        width:auto;
+        text-align: center;
+    }
+    #footer{
+        background: #00356b;
+    }
+    #footer .f_con02 .copy{
+        text-align: center;
+        color: #fff;
+    }
+    #footer .f_con02 .links{
+        display: none;
+    }
+    #footer .f_con02 .btnRight,#footer .f_con02 .copy{
+        float: none;
+    }
+
+
+    #footer .f_con01{
+        display: none;
+    }
+    #home .section03 .se3_title{
+        padding-top: 0px;
+    }
+    #home .sec3_contain_mobile .sec3_ele.sec3_eleWond{
+        padding-bottom: 24px;
+    }
+    #home  .sec3_contain_mobile .wonderfull{
+        position: relative;
+        top: auto;
+    }
+    #home .sec3_contain .sec3_contain_mobile .video-pagination{
+        position: absolute;
+        right: 10px;
+        top: 45%;
+        text-align: center;
+        z-index: 10;
+    }
+    #home .sec3_contain .sec3_contain_mobile .video-pagination a span{
+        display: block;
+        height: 0;
+        font-size: 0;
+        overflow: hidden;
+        text-indent: 1000px;
+        width: 9px;
+        height: 10px;
+         margin: 10px; 
+        background: #fff;
+        background: url(../images/un_disc.png) no-repeat center center;
+    }
+    #home .sec3_contain .sec3_contain_mobile .video-pagination a.selected span{
+    background: url(../images/sel_disc.png) no-repeat center center;
+    }
+
+    #home .sec3_contain_mobile .sec3_ele{
+        width: auto;
+        float: none;
+    }
+    #home .sec3_contain .sec_inner{
+        display: none;
+    }
+    #home .sec3_contain .sec3_contain_mobile{
+        display: block;
+        padding-bottom: 40px;
+    }
+    #home .section03 .se3_title ul{
+        display: none;
+    }
+    #home .section02 .new_detail {
+        height: auto; 
+        padding-bottom: 48px;
+    }
+    #home .section02 .con_ele_inner{
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+    #home .section02 .con_img_ele,#home .section02 .con_ele{
+        width: 100%;
+        float: none;
+    }
+    #home .section01 .right{
+        padding-top: 40px;
+    }
+    #home .section01 .left,#home .section01 .right{
+        width: 100%;
+        float: none;
+    }
+    #home .section_mobile{
+        display:block;
+    }
+    #home .banner_silder .b_c_01{
+        display: none;
+    }
+    #footer .f_inner{
+        width: 94%;
+    }
+    #home .banner_silder .font{
+        width: 550px;
+    }
+    #home .sec_inner{
+        width: 94%;
+    }
+    #header .h_inner{
+        width: 94%;
+    }
+    #sidebarMenu{
+        display: none;
+    }
+    #header .h_l_r{
+        display: none;
+    }
+    #header .h_menu{
+        display: none;
+    }
+    .sideopen .container {
+        -webkit-transform: translateX(-330px);
+        -moz-transform: translateX(-330px);
+        -ms-transform: translateX(-330px);
+        transform: translateX(-330px);
+    }
+    body.sideopen #shadow {
+        top: 0;
+        position: absolute;
+        top: 83px;
+        width: 100%;
+        height: 100%;
+        z-index: 500;
+        background-color: rgba(0,0,0,.5);
+    }
+    #slideli{
+        padding-top: 85px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #slideli .nemu{
+        font-size: 18px;
+        text-indent: 50px;
+        color: #666;
+        padding: 10px 0;
+    }
+    #slideli .nemu.active{
+        background:url(../images/Sharp.png) no-repeat;
+        background-position: 50px center;
+    }
+    #slideli .nemu.active a{
+        padding-left: 20px;
+    }
+    #slideli .nemu a{
+         color: #666;
+    }
+    #slideli .nemu:hover a{
+        color: #ff7f00;
+    }
+    
+    #header .headerWrap{
+        position: relative;
+    }
+    .nav-toggle {
+        display: block;
+        right: 0;
+        top: 13px;
+        width: 60px;
+        height: 60px;
+        z-index: 6;
+        position: absolute;
+        cursor: pointer;
+        -webkit-transition-duration: 0.66s;
+        transition-duration: 0.66s;
+        -webkit-transition-timing-function: swing;
+        transition-timing-function: swing;
+    }
+    .nav-toggle .icon {
+        width: 30px;
+        height: 4px;
+        background-color: #fff;
+        border-radius: 2px;
+        position: absolute;
+        top: 26px;
+        left: 15px;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        transiting-timing-function: swing;
+        z-index: 5;
+    }
+    .nav-toggle .icon:before, .nav-toggle .icon:after {
+        width: 30px;
+        height: 4px;
+        background-color: #fff;
+        border-radius: 2px;
+        content: "";
+        position: absolute;
+        left: 0;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: swing;
+        transition-timing-function: swing;
+    }
+    .nav-toggle .icon:before {
+        top: -9px;
+    }
+    .nav-toggle .icon:after {
+        top: 9px;
+    }
+    
+    
+    body.sideopen .nav-toggle .icon {
+        width: 0;
+    }
+    body.sideopen .nav-toggle .icon:before {
+        -webkit-transform: translateY(9px) rotate(45deg);
+        -ms-transform: translateY(9px) rotate(45deg);
+        transform: translateY(9px) rotate(45deg);
+    }
+    body.sideopen .nav-toggle .icon:after {
+        -webkit-transform: translateY(-9px) rotate(-45deg);
+        -ms-transform: translateY(-9px) rotate(-45deg);
+        transform: translateY(-9px) rotate(-45deg);
+    }
+    
+    .grid {
+        position: fixed;
+        width: 330px;
+        top: 0px;
+        right: 0px;
+        height: 100%;
+        display: none;
+       background: #192e75;
+    }
+
+}
+
+@media screen and (max-width:640px){
+    #process .process_nav_ele p .hid {
+        display: inline;
+    }
+    #video .video_font{
+        height: 85px;
+    }
+    #video .video_f_wrap .h{
+        height: 32px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    #video .video_f_wrap .time{
+        font-size: 20px;
+        line-height: 33px;
+    }
+    #video .video_ele.odd .video_e_inner,#video .video_ele.even .video_e_inner{
+        padding: 0px;
+    }
+    #video .video_ele{
+        width: auto;
+        float:none;
+    }
+    #video .video_nav_e{
+        font-size: 26px;
+        width: 160px;
+    }
+    #life .life_block .f_title{
+        height: 64px;
+        overflow: hidden;
+    }
+    #life .life_block .p{
+        padding-top: 10px;
+        height:96px;
+        overflow: hidden;
+    }
+    #life .life_block .more{
+        font-size: 24px;
+    }
+    #life .life_block .f_title p{
+        font-size:24px;
+        line-height: 32px;
+    }
+    #life .life_block .p p{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #history .title_y{
+        font-size: 22px;
+        line-height: 32px;
+    }
+    #history .fontReact .p p{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #history .h_y {
+        margin-bottom: 9px;
+    }
+    #history .h_y p{
+        font-size:20px;
+    }
+    #international .inter_con p{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #content .con_title p span {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    #introduction .intro_sec04_H p {
+        background: url(../images/intro_sec04_HBg.png) no-repeat left 11px;
+    }
+    #introduction .intro_sec04_p p{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #introduction .intro_sec04_H p{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    #introduction .sec03_ele{
+        height:auto;
+        margin-bottom: 20px;
+    }
+    #introduction .sec03_font .p_detail p{
+        height:auto;
+    }
+    #introduction .sec03_font .titleH p{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    #introduction .sec03_font .p_detail p{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #introduction .sec03_ele{
+        width: auto;
+        float: none;
+    }
+    #introduction .sec03_ele.odd .sec03_ele_inner,#introduction .sec03_ele.even .sec03_ele_inner{
+        padding: 0;
+    }
+    #introduction .sec02_ele .p p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #introduction .introduction .more{
+        font-size: 24px;
+
+    }
+    #introduction .intro_sec02 .sec_h p{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    #introduction .sec02_ele{
+        width:50%;
+        padding-bottom: 20px;
+    }
+    #introduction .intro_sec01 p{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #tuition .tuition_p_nav{
+        font-size: 0px;
+
+    }
+    #tuition .tuition_nav_e{
+        height: 82px;
+        width: 48%;
+        padding: 0;
+    }
+    #tuition .tuition_cont p{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #rules .rules_block .m_btn p{
+        width:398px;
+    }
+    #rules .rules_block .m_btn{
+        width:auto;
+    }
+    #rules .rules_block .m_p_contact p {
+        padding-left: 109px;
+    }
+    #rules .rules_block .m_title{
+        font-size: 22px;
+        line-height: 32px;
+        height:auto;
+    }
+    #rules .rules_block .mR_ele_3,#rules .rules_block .mR_ele_2{
+        width: auto;
+    }
+    #rules .rules_block .mR_ele{
+        float: none;
+    }
+    #rules .rules_block .mR_Wrap {
+        padding: 0px;
+    }
+    #rules .rules_block  .mR_ele_3 .mR_Inner{
+        height:auto;
+    }
+    #rules .rules_block p{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #rules .rules_nav_e{
+        font-size:26px;
+        width:160px;
+    }
+    #process .process_cont p{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #process .process_look p{
+        font-size:20px;
+        line-height: 32px;
+    }
+    #process .process_nav_ele p{
+        font-size:20px;
+        line-height: 32px;
+    }
+    #process .pro_angle{
+        right: -35px;
+    }
+    #faq .faq_block p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #faq .f_font_hid .m_ul_li {
+        background: url(../images/disc_00448b.png) no-repeat left 14px;
+    }
+    #faq .f_font_inner p{
+        font-size:24px;
+        line-height: 32px;
+    }
+    #faq .faq_nav_e{
+        font-size: 26px;
+        width: 160px;
+    }
+    #enroll .enroll_h{
+       font-size: 22px;
+        line-height: 30px;
+        height: 30px;
+    }
+    #enroll .encroll_p {
+        font-size: 20px;
+        line-height: 33px;
+    }
+    #down .down_font p {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    #down .down_ele{
+        width: 46%;
+    }
+    #apply .apply_font .enter p {
+        font-size: 24px;
+        line-height: 50px;
+    }
+    #apply .apply_font .enter {
+        height: 50px;
+    }
+    #apply .apply_f_inner h3{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    #apply .apply_con_ele .ace_h {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    #apply .apply_con_ele .ace_p{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #apply .apply_nav_e{
+        font-size:26px;
+        width: 160px;
+    }
+    #apply .apply_eleinner{
+        height:auto;
+        padding-bottom:54px;
+    }
+    #apply .apply_img{
+        height:240px;
+    }
+    #apply .apply_font{
+        position: static;
+        width: auto;
+        height: auto;
+    }
+    #view .view_eff{
+        height:120px;
+    }
+    #view .view_eff_inner p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #view .view_se_ele{
+        width: 50%;
+    }
+    #view .view_sec02_title{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    #view .view_bigImg p{
+        font-size:20px;
+        line-height: 32px;
+    }
+    #service .site_tel_wrap p span{
+        font-size: 20px;
+    }
+    #service .site_tel_wrap p {
+        font-size: 20px;
+        line-height: 34px;
+        padding-left: 113px;
+    }
+    #service .site_ele .site_title_ele p {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    #service .service_sec02 .site_title {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    #service .site_ele.odd .site_inner,#service .site_ele.even .site_inner{
+        padding: 0;
+    }
+    #service .site_ele{
+        width: auto;
+        float: none;
+    }
+    #service .service_sec01 p{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #foster .foster_table p{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    #foster .foster_p p{
+        font-size:20px;
+        line-height: 32px;
+    }
+    #foster .foster_ele.foster_odd .foster_ele_inner,#foster .foster_ele.foster_even .foster_ele_inner{
+        padding:0;
+    }
+    #foster .foster_ele{
+        width:auto;
+        float: none;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    #career .career_block p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #sidebar .sidemenu h3 {
+        font-size: 33px;
+        line-height: 52px;
+    }
+    #sidebar .sidemenu ul li p {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    #about .about_block .erweima p{
+        font-size: 22px;
+        line-height: 32px;
+    }
+    #about .about_block .c_l_ele .p_c {
+        line-height: 32px;
+        font-size: 20px;
+    }
+    #about .about_block .c_l_ele {
+        padding-top: 29px;
+    }
+    #about .about_block .c_l_ele .p_tt {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    #about .about_block .con_sec_left,#about .about_block .con_sec_right{
+        width: auto;
+        float: none;
+    }
+    #nav .nav_ele a{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    #nav .nav_ele{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    #content .con_title p{
+        font-size: 33px;
+    }
+    #home .s_m_in_bg {
+        height: 133px;
+    }
+    #home .s_m_inner01 {
+         padding-top: 30px;
+    }
+    #home .section .t01 .h{
+        font-size: 32px;
+        line-height: 49px;
+    }
+    #home .section .t01 .p {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    #home .section .title01 .more{
+        font-size: 24px;
+    }
+    #home .section01 .l_left,#home .section01 .l_right{
+        width: auto;
+        float: none;
+    }
+    #home .section01 .l_right{
+        padding-top: 20px;
+    }
+    #home .section01 .only_one .t{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    #home .section01 .only_one .p p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #home .section01 .l_left_w{
+        height: 216px;
+    }
+    #home .section01 .only_one .p {
+        padding-top: 10px;
+    }
+    #home .section01 .only_one .more{
+        font-size: 24px;
+    }
+    #home .section01 .l_r_ele p{
+        font-size: 20px;
+        background: url(../images/l_message.png) no-repeat left 10px;
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #home .section01 .l_r_ele .time{
+        font-size:20px;
+    }
+    #home .section01 .l_r_ele p{
+        padding-right: 126px;
+    }
+    #home .section01 .sliderBtn{
+        width:60px;
+    }
+    #home .section01 .b_left,#home .section01 .b_right{
+        width: 28px;
+    }
+    #home .section01 .as_ele p{
+        font-size: 20px;
+        line-height: 32px;
+        height:64px;
+        background: url(../images/disc.png) no-repeat left 13px;
+    }
+    #home .section01 .as_ele .time{
+        font-size: 20px;
+
+    }
+    #home .section02 .n_s_ele .p p{
+        font-size: 20px;
+    }
+    #home .section02 .new_detail .h{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    #home .section02 .new_detail .p p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #home .section02 .new_detail .more {
+        font-size: 24px;
+    }
+    #home .sec3_ele .wonderfull .p1 {
+        font-size: 33px;
+        line-height: 65px;
+    }
+    #home .sec3_ele .wonderfull .p2 {
+        font-size: 30px;
+    }
+    #home .sec3_ele .f_title p {
+        font-size: 22px;
+    }
+    #home .sec3_ele .d_c_ele p{
+        font-size: 20px;
+    }
+    #home .sec3_detail .t_cell{
+        font-size: 22px;
+        line-height: 32px;
+    }
+    #home .sec3_detail .more p,#home .sec04_list .more p{
+        font-size: 22px;
+        width: 103px;
+    }
+    #home .sec04_title .h{
+        font-size: 33px;
+        line-height: 65px;
+    }
+    #home .sec04_title .p{
+        font-size: 30px;
+    }
+    #home .sec04_list .m_title .h {
+        font-size: 26px;
+        line-height: 42px;
+    }
+    #home .sec04_list .m_title .p {
+        font-size: 22px;
+        line-height: 34px;
+    }
+    #home .sec04_list .m_ele p {
+        font-size: 20px;
+    }
+    #footer .f_con02 .copy {
+        font-size: 22px;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+

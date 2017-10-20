@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>项目特色</title>
+         <meta name="viewport" content="width=640">
+        <link rel="stylesheet" type="text/css" href="css/global.css" />
+        <link rel="stylesheet" type="text/css" href="css/media.css" />
+        
+        <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="js/webfoss.fullscreenstage.js"></script>
+        <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1.js"></script>
+        <script src="./js/waypoints.min.js"></script>
+        <script type="text/javascript" src="js/innerPage.js"></script>
+	</head>
+	<body>
+		
+        <div class="container" id="page">
+            <div id="header">
+                <div class="h_logo">
+                    <div class="h_inner clearAfter">
+                        <div class="logo">
+                            <a href="./">
+                                <img src="images/logo.png">
+                            </a>
+                        </div>
+                        <div class="h_l_r">
+                            <ul>
+                                <li>
+                                    <p>
+                                        <a target="_blank" href="http://www.fdsm.fudan.edu.cn/AboutUs/index.aspx">复旦首页</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                        <a target="_blank" href="http://www.fdsm.fudan.edu.cn/fdmba">管院首页</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                        <a href="./stu_forum.html">学生门户</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                        <a href="./about_us.html">联系我们</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                    </p>
+                                </li>
+                                <li class="langRel">
+                                    <div class="langSwitch">English</div>
+                                    <div class="langHid">
+                                        <p><a href="javascript:void(0)">English</a></p>
+                                        <p><a href="javascript:void(0)">中文</a></p>
+                                    </div>
+                                </li>
+                                <script>
+                                    $(".langSwitch").click(function(){
+                                        if($(this).parent(".langRel").hasClass("active")){
+                                            $(this).parent(".langRel").removeClass("active");
+                                            $(this).next(".langHid").slideUp();
+                                        }else{
+                                            $(this).parent(".langRel").addClass("active");
+                                            $(this).next(".langHid").slideDown();
+                                        }
+                                    })
+                                </script>
+                            </ul>
+                            <div class="h_l_search">
+                                <form id="searchform" action="/site/search" accept-charset="UTF-8" method="get">
+                                    <input type="text" onfocus="document.getElementById('note01').style.display='none'" onblur="if(value=='')document.getElementById('note01').style.display='block'" class="searchext" placeholder="" name="keyword">
+                                    <div id="note01" class="note" onclick="document.getElementById('note01').style.display='none'" style="display: block;">搜索...</div>
+                                    <!--<input type="submit" class="searchbtn">-->
+                                    <input type="button" class="searchbtn">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="nav-toggle">
+                            <div class="icon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_menu">
+                    <div class="h_inner clearAfter">
+                        <div class="h_table">
+                            
+                            <div class="h_t_title">
+                                <p><a href="./">首页</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title">
+                                <p><a href="./introduction.html">项目介绍</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title">
+                                <p><a href="./info_enroll.html">招生信息</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title">
+                                <p><a href="./fea_foster.html">项目特色</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title">
+                                <p><a href="./stu_forum.html">学生生活</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title h_t_title_last">
+                                <p><a href="./about_us.html">关于我们</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="foster">
+                <div id="ban">
+                    <img src="images/ban_fea.jpg">
+                    <div class="banFont">
+                        <p class="cn">项目特色</p>
+                        <p class="en">PROGRAMME FEATURES</p>
+                    </div>
+                </div>
+                <div id="nav">
+                    <div class="navInner clearAfter">
+                        <div class="navFloat clearAfter">
+                            <div class="nav_ele nav_e_icon"><a href="./">首页</a></div>
+                            <div class="nav_ele nav_e_icon"><a href="./fea_foster.html">项目特色</a></div>
+                            <div class="nav_ele nav_e_last">培养体系</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contain_menu">
+                    <div class="main_inner clearAfter">
+                        <div id="content">
+                            <div class="con_padding">
+                                <div class="con_title">
+                                    <p>培养体系</p>
+                                </div>
+                                <div class="con_inner">
+                                    <div class="foster_block clearAfter">
+
+
+                                        <div class="foster_ele foster_odd">
+                                            <div class="foster_ele_inner">
+                                                <div class="foster_t_icon">
+                                                    <div class="foster_icon foster_icon01"></div>
+                                                    <div class="foster_t">
+                                                        <div class="foster_table">
+                                                            <p>先进的课程体系和一流的师资队伍</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="foster_p">
+                                                    <p>项目构建了在线预修课程、必修课程和专业方向选修课程的创新体系，倡导理论与实践并重，国际化与本土化并行的理念。授课教师兼具深厚学术造诣和丰富管理实践经验。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="foster_ele foster_even">
+                                            <div class="foster_ele_inner">
+                                                <div class="foster_t_icon">
+                                                    <div class="foster_icon foster_icon02"></div>
+                                                    <div class="foster_t">
+                                                        <div class="foster_table">
+                                                            <p>顶尖的国际合作和开阔的全球视野</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="foster_p">
+                                                    <p>项目与多所国际顶尖院校合作培养国际化管理人才。提供海外第二学位学习机会，开展学生国际交流交换，组织海外短期课程与游学，以拓展学生国际化视野。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="foster_ele foster_odd">
+                                            <div class="foster_ele_inner">
+                                                <div class="foster_t_icon">
+                                                    <div class="foster_icon foster_icon03"></div>
+                                                    <div class="foster_t">
+                                                        <div class="foster_table">
+                                                            <p>领先的行动学习和多样的知行平台</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="foster_p">
+                                                    <p>项目通过多种渠道加强学生与各个行业、各类企业和组织的交流与合作，鼓励学生参加全球高水平商学院赛事，着力打造创业生态圈，为学生开展行动学习提供支持。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="foster_ele foster_even">
+                                            <div class="foster_ele_inner">
+                                                <div class="foster_t_icon">
+                                                    <div class="foster_icon foster_icon04"></div>
+                                                    <div class="foster_t">
+                                                        <div class="foster_table">
+                                                            <p>人本的培养理念和全面的个人发展</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="foster_p">
+                                                    <p>项目独特的课外“聚劲”活动平台，引导学生加强自我认知、广泛学习，鼓励学生参与各类学生组织建立与发展，倡导学生“勇担社会责任”，全面提升学生的领导力。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="foster_ele foster_odd">
+                                            <div class="foster_ele_inner">
+                                                <div class="foster_t_icon">
+                                                    <div class="foster_icon foster_icon05"></div>
+                                                    <div class="foster_t">
+                                                        <div class="foster_table">
+                                                            <p>深厚的复旦底蕴和终身的发展支持</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="foster_p">
+                                                    <p>项目依托百年复旦深厚的文化底蕴，发挥综合性大学的多学科优势，为学生提供终身学习资源。完善的职业发展服务和校友服务为学生和校友提供终身职业发展的支持。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="sidebar">
+                            <div class="sidemenu">
+                                <h3>项目特色</h3>
+                                <ul>
+                                    <a href="./fea_foster.html">
+                                        <li class="active">
+                                            <p>培养体系</p>
+                                        </li>
+                                    </a>
+                                    <a href="./fea_set.html">
+                                        <li>
+                                            <p>课程设置</p>
+                                        </li>
+                                    </a>
+                                    <a href="./fea_view.html">
+                                        <li>
+                                            <p>国际视野</p>
+                                        </li>
+                                    </a>
+                                    <a href="./fea_study.html">
+                                        <li>
+                                            <p>行为学习</p>
+                                        </li>
+                                    </a>
+                                    <a href="./fea_career.html">
+                                        <li>
+                                            <p>职业发展</p>
+                                        </li>
+                                    </a>
+                                    <a href="./fea_service.html">
+                                        <li>
+                                            <p>校友服务</p>
+                                        </li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="newsblock">
+                                <div class="newInner">
+                                    <div class="new_con">
+                                        <h3>新闻报道</h3>
+                                        <div class="new_detal">
+                                            <div class="imgWrap">
+                                                <img src="images/newImg.jpg" />
+                                                <div class="img_data">
+                                                    <div class="y_m">
+                                                        2016/玖月
+                                                    </div>
+                                                    <div class="d">
+                                                       05
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p">
+                                                <p>【国际视野】GNW全球商学院探索之旅：深入企业运营，探秘成功法宝</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer">
+                <div class="f_con01">
+                    <div class="f_inner clearAfter">
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>项目介绍</p>
+                                </div>
+                                <ul>
+                                    <a href="./project_history.html"><li>项目历程与荣誉</li></a>
+                                    <a href="./project_mba.html"><li>复旦MBA项目</li></a>
+                                    <a href="./project_international.html"><li>复旦国际MBA项目</li></a>
+                                    <a href="./project_asia.html"><li>复旦S3Asia MBA项目</li></a>
+                                    <a href="./project_hk.html"><li>复旦中文MBA香港班</li></a>
+                                    <a href="./project_college.html"><li>本科生菁英计划</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>招生信息</p>
+                                </div>
+                                <ul>
+                                    <a href="./info_enroll.html"><li>招生活动</li></a>
+                                    <a href="./info_apply.html"><li>在线申请</li></a>
+                                    <a href="./info_rules.html"><li>招生简章</li></a>
+                                    <a href="./info_process.html"><li>申请流程</li></a>
+                                    <a href="./info_tuition.html"><li>学费与资助</li></a>
+                                    <a href="./info_down.html"><li>资料下载</li></a>
+                                    <a href="./info_faq.html"><li>常见问题</li></a>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>项目特色</p>
+                                </div>
+                                <ul>
+                                    <a href="./fea_foster.html"><li>培养体系</li></a>
+                                    <a href="./fea_set.html"><li>课程设置</li></a>
+                                    <a href="./fea_view.html"><li>国际视野</li></a>
+                                    <a href="./fea_study.html"><li>行动学习</li></a>
+                                    <a href="./fea_career.html"><li>职业发展</li></a>
+                                    <a href="./fea_service.html"><li>校友服务</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>学生生活</p>
+                                </div>
+                                <ul>
+                                    <a href="./stu_forum.html"><li>论坛讲堂</li></a>
+                                    <a href="./stu_club.html"><li>MBA俱乐部</li></a>
+                                    <a href="./stu_coffee.html"><li>聚劲咖啡馆</li></a>
+                                    <a href="./stu_expo.html"><li>MBA博览会</li></a>
+                                    <a href="./stu_innovate.html"><li>创新创业</li></a>
+                                    <a href="./stu_life.html"><li>学生故事</li></a>
+                                    <a href="./stu_activity.html"><li>学生活动</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>关于我们</p>
+                                </div>
+                                <ul>
+                                    <a href="./about_us.html"><li>上海</li></a>
+                                    <a href="./about_hk.html"><li>香港</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="f_con02">
+                    <div class="f_inner clearAfter">
+                        
+                        <div class="btnRight clearAfter">
+                            <div class="links">
+                                <select onchange="goToPage(this)">
+                                    <option value="">---友情链接---</option>
+                                    <option value="http://www.fdsm.fudan.edu.cn/AboutUs/index.aspx">复旦大学</option>
+                                    <option value="http://www.fdsm.fudan.edu.cn/fdmba/">管院首页</option>
+                                </select>
+                                <script>
+                                    function goToPage(obj){
+                                        window.open($(obj).val())
+                                    }
+                                </script>
+                            </div>
+                            <div class="sharePic jiathis">
+                                <a class="jiathis_button_tsina">
+                                    <div class="sp_sina"></div>
+                                </a>
+                                <a class="jiathis_button_weixin">
+                                    <div class="sp_weixin"></div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <p class="copy">Copyright 2017 复旦大学管理学院. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--class="jiathis"-->
+            <div id="sidebarMenu">
+                <a href="./info_apply.html">
+                    <div class="siderbar_ele siderbar_ele01">
+                        <div class="sider_bg"></div>
+                        <p>在线申请</p>
+                    </div>
+                </a>
+                <a href="./info_enroll.html">
+                    <div class="siderbar_ele siderbar_ele02">
+                        <div class="sider_bg"></div>
+                        <p>招生活动</p>
+                    </div>
+                </a>
+                <a href="./info_down.html">
+                    <div class="siderbar_ele siderbar_ele03">
+                        <div class="sider_bg"></div>
+                        <p>资料下载</p>
+                    </div>
+                </a>
+                <a href="./info_faq.html">
+                    <div class="siderbar_ele siderbar_ele04">
+                        <div class="sider_bg"></div>
+                        <p>常见问题</p>
+                    </div>
+                </a>
+                <a href="./about_us.html">
+                    <div class="siderbar_ele siderbar_ele05">
+                        <div class="sider_bg"></div>
+                        <p>联系我们</p>
+                    </div>
+                </a>
+                <a class="jiathis_button_tsina">
+                    <div class="siderbar_ele siderbar_ele06">
+                        <div class="sider_bg"></div>
+                        <p>分享</p>
+                    </div>
+                </a>
+                <div class="siderbar_ele siderbar_ele07">
+                    <div class="sider_bg"></div>
+                    <p>TOP</p>
+                </div>
+
+            </div>
+            <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+        
+            <div id="shadow"></div> 
+            
+        </div>	
+
+        <div class="grid">
+            <div id="slideli" class="three">
+                <div class="slideli_ul">
+                    <div class="s_menu">
+                        <a href="./"><p>首页</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./introduction.html"><p>项目介绍</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./info_enroll.html"><p>招生信息</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./fea_foster.html"><p>项目特色</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./stu_forum.html"><p>学生生活</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./about_us.html"><p>关于我们</p></a>
+                    </div>
+                </div>
+                <div class="slideli_s_lan">
+                    <div class="g_l_search">
+                        <form  action="/site/search" accept-charset="UTF-8" method="get">
+                            <input type="text" onfocus="document.getElementById('note02').style.display='none'" onblur="if(value=='')document.getElementById('note02').style.display='block'" class="searchext" placeholder="" name="keyword">
+                            <div id="note02" class="note2" onclick="document.getElementById('note02').style.display='none'" style="display: block;">搜索...</div>
+                            <!--<input type="submit" class="searchbtn">-->
+                            <input type="button" class="searchbtn">
+                        </form>
+                    </div>
+                    <div class="g_langWrap">
+                        <div class="g_langRel">
+                            <div class="g_langSwitch">English</div>
+                            <div class="g_langHid" style="display: none;">
+                                <p><a href="javascript:void(0)">English</a></p>
+                                <p><a href="javascript:void(0)">中文</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $(".g_langSwitch").click(function(){
+                            if($(this).parent(".g_langRel").hasClass("active")){
+                                $(this).parent(".g_langRel").removeClass("active");
+                                $(this).next(".g_langHid").slideUp();
+                            }else{
+                                $(this).parent(".g_langRel").addClass("active");
+                                $(this).next(".g_langHid").slideDown();
+                            }
+                        })
+                    </script>
+                </div>
+
+
+            </div>
+        </div>
+	</body>
+</html>
+

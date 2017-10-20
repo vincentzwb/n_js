@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+        <meta name="viewport" content="width=640">
+        <link rel="stylesheet" type="text/css" href="css/global.css" />
+
+        <link rel="stylesheet" type="text/css" href="css/media.css" />
+
+
+        <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="js/webfoss.fullscreenstage.js"></script>
+        <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1.js"></script>
+        <script src="./js/jquery.jplayer.min.js"></script>
+        <script src="./js/waypoints.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		
+        <div class="container" id="page">
+            <div id="header">
+                <div class="h_logo">
+                    <div class="h_inner clearAfter">
+                        <div class="logo">
+                            <a href="./">
+                                <img src="images/logo.png">
+                            </a>
+                        </div>
+                        <div class="h_l_r">
+                            <ul>
+                                <li>
+                                    <p>
+                                        <a target="_blank" href="http://www.fdsm.fudan.edu.cn/AboutUs/index.aspx">复旦首页</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                        <a target="_blank" href="http://www.fdsm.fudan.edu.cn/fdmba">管院首页</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                        <a href="./stu_forum.html">学生门户</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                        <a href="./about_us.html">联系我们</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                                    </p>
+                                </li>
+                                <li class="langRel">
+                                    <div class="langSwitch">English</div>
+                                    <div class="langHid">
+                                        <p><a href="javascript:void(0)">English</a></p>
+                                        <p><a href="javascript:void(0)">中文</a></p>
+                                    </div>
+                                </li>
+                                <script>
+                                    $(".langSwitch").click(function(){
+                                        if($(this).parent(".langRel").hasClass("active")){
+                                            $(this).parent(".langRel").removeClass("active");
+                                            $(this).next(".langHid").slideUp();
+                                        }else{
+                                            $(this).parent(".langRel").addClass("active");
+                                            $(this).next(".langHid").slideDown();
+                                        }
+                                    })
+                                </script>
+                            </ul>
+                            <div class="h_l_search">
+                                <form id="searchform" action="/site/search" accept-charset="UTF-8" method="get">
+                                    <input type="text" onfocus="document.getElementById('note01').style.display='none'" onblur="if(value=='')document.getElementById('note01').style.display='block'" class="searchext" placeholder="" name="keyword">
+                                    <div id="note01" class="note" onclick="document.getElementById('note01').style.display='none'" style="display: block;">搜索...</div>
+                                    <!--<input type="submit" class="searchbtn">-->
+                                    <input type="button" class="searchbtn">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="nav-toggle">
+                            <div class="icon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_menu">
+                    <div class="h_inner clearAfter">
+                        <div class="h_table">
+                            
+                            <div class="h_t_title">
+                                <p><a href="./">首页</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title">
+                                <p><a href="./introduction.html">项目介绍</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title">
+                                <p><a href="./info_enroll.html">招生信息</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title">
+                                <p><a href="./fea_foster.html">项目特色</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title">
+                                <p><a href="./stu_forum.html">学生生活</a></p>
+                            </div>
+                            <div class="h_cell"></div>
+                            <div class="h_t_title h_t_title_last">
+                                <p><a href="./about_us.html">关于我们</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="home">
+                <div class="banner_silder">
+                    <div class="slider">
+                        <div class="slider_ele">
+                            <img class="banner" src="images/h_ban01.jpg" />
+                            <div class="font">
+                                <p class="p1 p1effe01">2017</p>
+                                <p class="p1 p1effe02">复旦大学管理学院</p>
+                                <p class="p2 p1effe03">FUDAN MBA PROGRAM</p>
+                            </div>
+                        </div>
+                        <div class="slider_ele">
+                            <img class="banner" src="images/h_ban01.jpg" />
+                            <div class="font">
+                                <p class="p1 p1effe01">2017</p>
+                                <p class="p1 p1effe02">复旦大学管理学院</p>
+                                <p class="p2 p1effe03">FUDAN MBA PROGRAM</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="btnCon">
+                        <div class="b_c_01 clearAfter">
+                            <div class="b_ele b_ele01">
+                                <a href="./introduction.html">
+                                    <div class="b_e b_e01">
+                                        <div class="b_e_inner">
+                                            <div class="f_w f_w01">
+                                                <p class="h">项目介绍</p>
+                                                <p class="p">PROGRAM INTRODUCTION</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="b_ele b_ele01">
+                                <a href="./info_enroll.html">
+                                    <div class="b_e b_e02">
+                                        <div class="b_e_inner">
+                                            <div class="f_w f_w02">
+                                                <p class="h">招生活动</p>
+                                                <p class="p">ENROLLMENT ACTIVITIES</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="b_ele">
+                                <a href="./info_apply.html">
+                                    <div class="b_e b_e03">
+                                        <div class="b_e_inner">
+                                            <div class="f_w f_w03">
+                                                <p class="h">在线申请</p>
+                                                <p class="p">ONLINE APPLICATION</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="b_c_02 o">
+                            <img src="images/page_down.png">
+                        </div>
+                    </div>
+                    <div class="pagination_01">
+                        <div class="banner-left"></div>
+                        <div class="banner-right"></div>
+                    </div>
+                    <div class="pagination_02">
+                        <div class="banner-pagination"></div>
+                    </div>
+                </div>
+                <div class="section_mobile section">
+                    <div class="sec_inner clearAfter">
+                        <div class="section_m_s1 clearAfter">
+                            <div class="section_m_ele1">
+                                <div class="s_m_inner">
+                                    <div class="s_m_in_bg bg_00356b">
+                                        <div class="s_m_inner01">
+                                            <img src="./images/s_m_e01.png" />
+                                            <p>项目介绍</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section_m_ele3">
+                                <div class="s_m_inner">
+                                    <div class="s_m_in_bg bg_4e2674">
+                                        <div class="s_m_inner03">
+                                            <p>项目介绍</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section_m_s1 clearAfter">
+                            <div class="section_m_ele1">
+                                <div class="s_m_inner">
+                                    <div class="s_m_in_bg bg_15569f">
+                                        <div class="s_m_inner01">
+                                            <img src="./images/s_m_e03.png" />
+                                            <p>在线申请</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section_m_ele1">
+                                <div class="s_m_inner">
+                                    <div class="s_m_in_bg bg_728f00">
+                                        <div class="s_m_inner01">
+                                            <img src="./images/s_m_e04.png" />
+                                            <p>资料下载</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section_m_ele1">
+                                <div class="s_m_inner">
+                                    <div class="s_m_in_bg bg_15569f">
+                                        <div class="s_m_inner01">
+                                            <img src="./images/s_m_e05.png" />
+                                            <p>常见问题</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+                <div class="section01 section">
+                    <div class="sec_inner clearAfter">
+                        <div class="left">
+                            <div class="l_inner">
+                                <div class="title01 clearAfter">
+                                    <div class="t01">
+                                        <p class="h">招生动态</p>
+                                        <p class="p">Enrollment dynamics</p>
+                                    </div>
+                                    <a href="./info_enroll.html"><div class="more">更多内容&nbsp;&gt;</div></a>
+                                </div>
+                                <div class="con clearAfter">
+                                    <div class="l_left">
+                                        <div class="l_left_w clearAfter">
+                                            <div class="ed_img">
+                                                <img src="images/ed_img.jpg" />
+                                                <div class="img_data">
+                                                    <div class="y_m">
+                                                        2016/玖月
+                                                    </div>
+                                                    <div class="d">
+                                                       05
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="only_one">
+                                                <p class="t">【国际视野】角逐之酷1：游学英美名角逐世界赛场</p>
+                                                <div class="p">
+                                                    <p>在人们印象里，英国是极其绅士和优雅的带着一股难以捉摸的贵族气质，这种气质或许是在一个阴雨绵绵的午后...</p>
+                                                </div>
+                                                <a href="javascript:void(0)"><div class="more">更多详情&nbsp;&gt;</div></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="l_right">
+                                        <div class="l_r_ele">
+                                            <a href="javascript:void(0)">
+                                                <p>复旦MBA网络宣讲会</p>
+                                                <div class="time">2016/06/24</div>
+                                            </a>
+                                        </div>
+                                        <div class="l_r_ele">
+                                            <a href="javascript:void(0)">
+                                                <p>复旦MBA 招生宣讲会暨填表说明会</p>
+                                                <div class="time">2016/06/24</div>
+                                            </a>
+                                        </div>
+                                        <div class="l_r_ele">
+                                            <a href="javascript:void(0)">
+                                                <p>复旦MBA 招生宣讲会（杭州）</p>
+                                                <div class="time">2016/06/24</div>
+                                            </a>
+                                        </div>
+                                        <div class="l_r_ele">
+                                            <a href="javascript:void(0)">
+                                                <p>复旦MBA 招生宣讲会（苏州）</p>
+                                                <div class="time">2016/06/24</div>
+                                            </a>
+                                        </div>
+                                        <div class="l_r_ele">
+                                            <a href="javascript:void(0)">
+                                                <p>复旦MBA 招生宣讲会（宁波）</p>
+                                                <div class="time">2016/06/24</div>
+                                            </a>
+                                        </div>
+                                        <div class="l_r_ele">
+                                            <a href="javascript:void(0)">
+                                                <p>【MBA俱乐部】互联网创业项目路...</p>
+                                                <div class="time">2016/06/24</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="title01 clearAfter">
+                                <div class="t01">
+                                    <p class="h">学生活动</p>
+                                    <p class="p">Student Activities</p>
+                                </div>
+                                <div class="sliderBtn">
+                                    <div class="b_left"></div>
+                                    <div class="b_right"></div>
+                                </div>
+                            </div>
+                            <div class="con clearAfter">
+                                <div class="sa_slider">
+                                    <div class="as_ele">
+                                        <div class="ele">
+                                            <p>复旦大学2017年硕士研究生招生考试初试成绩查询及相关事项通知</p>
+                                            <div class="time">2016/06/24</div>
+                                        </div>
+                                        <div class="ele">
+                                            <p>复旦大学2017年硕士研究生招生考试初试成绩查询及相关事项通知</p>
+                                            <div class="time">2016/06/24</div>
+                                        </div>
+                                        <div class="ele">
+                                            <p>复旦大学2017年硕士研究生招生考试初试成绩查询及相关事项通知</p>
+                                            <div class="time">2016/06/24</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="as_ele">
+                                        <div class="ele">
+                                            <p>复旦大学2017年硕士研究生招生考试初试成绩查询及相关事项通知</p>
+                                            <div class="time">2016/06/24</div>
+                                        </div>
+                                        <div class="ele">
+                                            <p>复旦大学2017年硕士研究生招生考试初试成绩查询及相关事项通知</p>
+                                            <div class="time">2016/06/24</div>
+                                        </div>
+                                        <div class="ele">
+                                            <p>复旦大学2017年硕士研究生招生考试初试成绩查询及相关事项通知</p>
+                                            <div class="time">2016/06/24</div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="section02 section">
+                    <div class="sec_inner clearAfter">
+                        <div class="title01 clearAfter">
+                            <div class="t01">
+                                <p class="h">新闻报道</p>
+                                <p class="p">News report</p>
+                            </div>
+                            <a href="./stu_activity.html"><div class="more">更多内容&nbsp;&gt;</div></a>
+                        </div>
+                        <div class="con clearAfter">
+                            <div class="con_inner clearAfter">
+                                <div class="con_img_ele">
+                                    <div class="news_slider">
+                                        <div class="n_s_ele">
+                                            <div class="imgWrap">
+                                                <img src="images/newImg.jpg" />
+                                            </div>
+                                            <div class="img_data">
+                                                <div class="y_m">
+                                                    2016/玖月
+                                                </div>
+                                                <div class="d">
+                                                    18
+                                                </div>
+                                            </div>
+                                            <div class="p">
+                                                <p>复旦MBA2017新年晚会暨微电影首映...</p>
+                                            </div>
+                                        </div>
+                                        <div class="n_s_ele">
+                                            <div class="imgWrap">
+                                                <img src="images/newImg.jpg" />
+                                            </div>
+                                            <div class="img_data">
+                                                <div class="y_m">
+                                                    2016/玖月
+                                                </div>
+                                                <div class="d">
+                                                    18
+                                                </div>
+                                            </div>
+                                            <div class="p">
+                                                <p>复旦MBA2017新年晚会暨微电影首映...</p>
+                                            </div>
+                                        </div>
+                                        <div class="n_s_ele">
+                                            <div class="imgWrap">
+                                                <img src="images/newImg.jpg" />
+                                            </div>
+                                            <div class="img_data">
+                                                <div class="y_m">
+                                                    2016/玖月
+                                                </div>
+                                                <div class="d">
+                                                    18
+                                                </div>
+                                            </div>
+                                            <div class="p">
+                                                <p>复旦MBA2017新年晚会暨微电影首映...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="new-pagination"></div>
+                                </div>
+                                <div class="con_ele">
+                                    <div class="con_ele_inner">
+                                        <div class="con_ele_con">
+                                            <div class="img_data">
+                                                <div class="y_m">
+                                                    2016/玖月
+                                                </div>
+                                                <div class="d">
+                                                    18
+                                                </div>
+                                            </div>
+                                            <div class="new_detail">
+                                                <p class="h">【国际视野】GNW全球商学院探索之旅：深入企业运营，探秘成功法宝</p>
+                                                <div class="p">
+                                                    <p>今年的GNW（全球商学院探索）之旅已经开启！复旦MBA的青年精英们奔赴世界各地，踏足美国加拿大、德国...</p>
+                                                </div>
+                                                <a href="javascript:void()"><div class="more">更多详情&nbsp;&gt;</div></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="con_ele">
+                                    <div class="con_ele_inner">
+                                        <div class="con_ele_con">
+                                            <div class="img_data">
+                                                <div class="y_m">
+                                                    2016/玖月
+                                                </div>
+                                                <div class="d">
+                                                    18
+                                                </div>
+                                            </div>
+                                            <div class="new_detail">
+                                                <p class="h">【国际视野】GNW全球商学院探索之旅：深入企业运营，探秘成功法宝</p>
+                                                <div class="p">
+                                                    <p>今年的GNW（全球商学院探索）之旅已经开启！复旦MBA的青年精英们奔赴世界各地，踏足美国加拿大、德国...</p>
+                                                </div>
+                                                <a href="javascript:void()"><div class="more">更多详情&nbsp;&gt;</div></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="section03">
+                    <div class="sec_inner clearAfter">
+                        <div class="se3_title">
+                            <ul>
+                                <a href="./video.html"><li class="li01">招生宣讲<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li></a>
+                                <a href="./video.html#story"><li class="li02">学生故事<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span></li></a>
+                                <a href="./video.html#project"><li class="li03">项目专题</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sec3_contain">
+                        <div class="sec_inner clearAfter">
+                            <div class="sec3_ele sec3_ele_video"  data-url="video/home2.mp4">
+                                <div class="imgWrap">
+                                    <img src="images/imgVideo.jpg"/>
+                                    <div class="videoPlay"></div>
+                                </div>
+                                <div class="font_wrap">
+                                    <div class="f_title">
+                                        <p>千面以色列：时髦又酷炫，颠覆你想象</p>
+                                    </div>
+                                    <div class="dataClass clearAfter">
+                                        <div class="d_c_ele d_c_ele01">
+                                            <p>2016/07/21</p>
+                                        </div>
+                                        <div class="d_c_ele d_c_ele02">
+                                            <p>招生宣讲</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sec3_ele sec3_eleWond">
+                                <a href="./video.html">
+                                    <div class="wonderfull">
+                                        <div class="table_cell">
+                                            <p class="p1">精彩视频</p>
+                                            <p class="p2">————  Wonderful video  ————</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sec3_ele sec3_ele_video"  data-url="video/home2.mp4">
+                                <div class="imgWrap">
+                                    <img src="images/imgVideo02.jpg"/>
+                                    <div class="videoPlay"></div>
+                                </div>
+                                <div class="font_wrap">
+                                    <div class="f_title">
+                                        <p>复旦MBA在SCB未来领袖挑战赛中获得佳绩</p>
+                                    </div>
+                                    <div class="dataClass clearAfter">
+                                        <div class="d_c_ele d_c_ele01">
+                                            <p>2016/07/21</p>
+                                        </div>
+                                        <div class="d_c_ele d_c_ele02">
+                                            <p>招生宣讲</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sec3_ele sec3_ele_video"  data-url="video/home2.mp4">
+                                <div class="imgWrap">
+                                    <img src="images/imgVideo03.jpg"/>
+                                    <div class="videoPlay"></div>
+                                </div>
+                                <div class="font_wrap">
+                                    <div class="f_title">
+                                        <p>复旦MBA在SCB未来领袖挑战赛中获得佳绩</p>
+                                    </div>
+                                    <div class="dataClass clearAfter">
+                                        <div class="d_c_ele d_c_ele01">
+                                            <p>2016/07/21</p>
+                                        </div>
+                                        <div class="d_c_ele d_c_ele02">
+                                            <p>招生宣讲</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sec3_ele sec3_eleDetail">
+                                <div class="sec3_detail">
+                                    <div class="table_cell">
+                                        <div class="t_cell">
+                                            <p>复旦MBA项目是中国开办最早、最具品牌影响力和最受考生欢迎的MBA项目。自1991年成立至今，复旦MBA项目坚持专业化的精神，荟萃精英、开拓进取、努力打造亚洲一流、世界著名的MBA项目。历经多年的实践和探索，并吸收欧美...</p>
+                                        </div>
+                                        <a href="./video.html">
+                                        <div class="more">
+                                            <p>查看更多</p>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="sec_inner sec3_contain_mobile">
+                            <div class="sec3_ele sec3_eleWond">
+                                <a href="./video.html">
+                                    <div class="wonderfull">
+                                        <div class="table_cell">
+                                            <p class="p1">精彩视频</p>
+                                            <p class="p2">————  Wonderful video  ————</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sec3_contain_sliderWrap">
+                                <div class="sec3_contain_slider">
+                                    <div class="sec3_ele sec3_ele_video"  data-url="video/home2.mp4">
+                                        <div class="imgWrap">
+                                            <img src="images/imgVideo.jpg"/>
+                                            <div class="videoPlay"></div>
+                                        </div>
+                                        <div class="font_wrap">
+                                            <div class="f_title">
+                                                <p>千面以色列：时髦又酷炫，颠覆你想象</p>
+                                            </div>
+                                            <div class="dataClass clearAfter">
+                                                <div class="d_c_ele d_c_ele01">
+                                                    <p>2016/07/21</p>
+                                                </div>
+                                                <div class="d_c_ele d_c_ele02">
+                                                    <p>招生宣讲</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sec3_ele sec3_ele_video"  data-url="video/home2.mp4">
+                                        <div class="imgWrap">
+                                            <img src="images/imgVideo02.jpg"/>
+                                            <div class="videoPlay"></div>
+                                        </div>
+                                        <div class="font_wrap">
+                                            <div class="f_title">
+                                                <p>复旦MBA在SCB未来领袖挑战赛中获得佳绩</p>
+                                            </div>
+                                            <div class="dataClass clearAfter">
+                                                <div class="d_c_ele d_c_ele01">
+                                                    <p>2016/07/21</p>
+                                                </div>
+                                                <div class="d_c_ele d_c_ele02">
+                                                    <p>招生宣讲</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sec3_ele sec3_ele_video"  data-url="video/home2.mp4">
+                                        <div class="imgWrap">
+                                            <img src="images/imgVideo03.jpg"/>
+                                            <div class="videoPlay"></div>
+                                        </div>
+                                        <div class="font_wrap">
+                                            <div class="f_title">
+                                                <p>复旦MBA在SCB未来领袖挑战赛中获得佳绩</p>
+                                            </div>
+                                            <div class="dataClass clearAfter">
+                                                <div class="d_c_ele d_c_ele01">
+                                                    <p>2016/07/21</p>
+                                                </div>
+                                                <div class="d_c_ele d_c_ele02">
+                                                    <p>招生宣讲</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="video-pagination"></div>
+                            </div>
+                            <div class="sec3_ele sec3_eleDetail">
+                                <div class="sec3_detail">
+                                    <div class="table_cell">
+                                        <div class="t_cell">
+                                            <p>复旦MBA项目是中国开办最早、最具品牌影响力和最受考生欢迎的MBA项目。自1991年成立至今，复旦MBA项目坚持专业化的精神，荟萃精英、开拓进取、努力打造亚洲一流、世界著名的MBA项目。历经多年的实践和探索，并吸收欧美...</p>
+                                        </div>
+                                        <a href="./video.html">
+                                        <div class="more">
+                                            <p>查看更多</p>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section04">
+                    <div class="sec04_title">
+                        <div class="title">
+                            <p class="h">项目特色</p>
+                            <p class="p">————  Programme Features  ————</p>
+                        </div>
+                    </div>
+                    <div class="sec04_list">
+                        <div class="sec_inner clearAfter">
+                            <div class="fouce">
+                                <div class="foucePos">
+                                    <div class="mainIcon">
+                                        <img src="images/mainIcon.png" />
+                                        <div class="m_title">
+                                            <p class="h">培养体系</p>
+                                            <p class="p">以人为本，内外兼修，全面打造“青年精英，未来领袖”</p>
+                                        </div>
+                                    </div>
+                                    <div class="manyEle clearAfter">
+                                        <div class="m_ele">
+                                            <div class="imgWrap">
+                                                <img src="images/manyIcon01.png">
+                                            </div>
+                                            <p>课程体系</p>
+                                        </div>
+                                        <div class="m_ele">
+                                            <div class="imgWrap">
+                                                <img src="images/manyIcon02.png">
+                                            </div>
+                                            <p>国际视野</p>
+                                        </div>
+                                        <div class="m_ele">
+                                            <div class="imgWrap">
+                                                <img src="images/manyIcon03.png">
+                                            </div>
+                                            <p>行动学习</p>
+                                        </div>
+                                        <div class="m_ele">
+                                            <div class="imgWrap">
+                                                <img src="images/manyIcon04.png">
+                                            </div>
+                                            <p>领导力提升</p>
+                                        </div>
+                                        <div class="m_ele m_ele_last">
+                                            <div class="imgWrap">
+                                                <img src="images/manyIcon05.png">
+                                            </div>
+                                            <p>终身发展</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="manyEle manyEle_mobile clearAfter">
+                                        <div class="manyEle_mobile_slider">
+                                            <div class="m_ele">
+                                                <div class="imgWrap">
+                                                    <img src="images/manyIcon01.png">
+                                                </div>
+                                                <p>课程体系</p>
+                                            </div>
+                                            <div class="m_ele">
+                                                <div class="imgWrap">
+                                                    <img src="images/manyIcon02.png">
+                                                </div>
+                                                <p>国际视野</p>
+                                            </div>
+                                            <div class="m_ele">
+                                                <div class="imgWrap">
+                                                    <img src="images/manyIcon03.png">
+                                                </div>
+                                                <p>行动学习</p>
+                                            </div>
+                                            <div class="m_ele">
+                                                <div class="imgWrap">
+                                                    <img src="images/manyIcon04.png">
+                                                </div>
+                                                <p>领导力提升</p>
+                                            </div>
+                                            <div class="m_ele m_ele_last">
+                                                <div class="imgWrap">
+                                                    <img src="images/manyIcon05.png">
+                                                </div>
+                                                <p>终身发展</p>
+                                            </div>
+                                        </div>
+                                        <div class="m_m_s_left"></div>
+                                        <div class="m_m_s_right"></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <a href="./fea_foster.html">
+                                <div class="more">
+                                    <p>查看更多</p>
+                                </div>
+                             </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer">
+                <div class="f_con01">
+                    <div class="f_inner clearAfter">
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>项目介绍</p>
+                                </div>
+                                <ul>
+                                    <a href="./project_history.html"><li>项目历程与荣誉</li></a>
+                                    <a href="./project_mba.html"><li>复旦MBA项目</li></a>
+                                    <a href="./project_international.html"><li>复旦国际MBA项目</li></a>
+                                    <a href="./project_asia.html"><li>复旦S3Asia MBA项目</li></a>
+                                    <a href="./project_hk.html"><li>复旦中文MBA香港班</li></a>
+                                    <a href="./project_college.html"><li>本科生菁英计划</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>招生信息</p>
+                                </div>
+                                <ul>
+                                    <a href="./info_enroll.html"><li>招生活动</li></a>
+                                    <a href="./info_apply.html"><li>在线申请</li></a>
+                                    <a href="./info_rules.html"><li>招生简章</li></a>
+                                    <a href="./info_process.html"><li>申请流程</li></a>
+                                    <a href="./info_tuition.html"><li>学费与资助</li></a>
+                                    <a href="./info_down.html"><li>资料下载</li></a>
+                                    <a href="./info_faq.html"><li>常见问题</li></a>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>项目特色</p>
+                                </div>
+                                <ul>
+                                    <a href="./fea_foster.html"><li>培养体系</li></a>
+                                    <a href="./fea_set.html"><li>课程设置</li></a>
+                                    <a href="./fea_view.html"><li>国际视野</li></a>
+                                    <a href="./fea_study.html"><li>行动学习</li></a>
+                                    <a href="./fea_career.html"><li>职业发展</li></a>
+                                    <a href="./fea_service.html"><li>校友服务</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>学生生活</p>
+                                </div>
+                                <ul>
+                                    <a href="./stu_forum.html"><li>论坛讲堂</li></a>
+                                    <a href="./stu_club.html"><li>MBA俱乐部</li></a>
+                                    <a href="./stu_coffee.html"><li>聚劲咖啡馆</li></a>
+                                    <a href="./stu_expo.html"><li>MBA博览会</li></a>
+                                    <a href="./stu_innovate.html"><li>创新创业</li></a>
+                                    <a href="./stu_life.html"><li>学生故事</li></a>
+                                    <a href="./stu_activity.html"><li>学生活动</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="f_ele">
+                            <div class="f_e_pad">
+                                <div class="title">
+                                    <p>关于我们</p>
+                                </div>
+                                <ul>
+                                    <a href="./about_us.html"><li>上海</li></a>
+                                    <a href="./about_hk.html"><li>香港</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="f_con02">
+                    <div class="f_inner clearAfter">
+                        
+                        <div class="btnRight clearAfter">
+                            <div class="links">
+                                <select onchange="goToPage(this)">
+                                    <option value="">---友情链接---</option>
+                                    <option value="http://www.fdsm.fudan.edu.cn/AboutUs/index.aspx">复旦大学</option>
+                                    <option value="http://www.fdsm.fudan.edu.cn/fdmba/">管院首页</option>
+                                </select>
+                                <script>
+                                    function goToPage(obj){
+                                        window.open($(obj).val())
+                                    }
+                                </script>
+                            </div>
+                            <div class="sharePic jiathis">
+                                <a class="jiathis_button_tsina">
+                                    <div class="sp_sina"></div>
+                                </a>
+                                <a class="jiathis_button_weixin">
+                                    <div class="sp_weixin"></div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <p class="copy">Copyright 2017 复旦大学管理学院. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+
+             <!--class="jiathis"-->
+            <div id="sidebarMenu">
+                <a href="./info_apply.html">
+                    <div class="siderbar_ele siderbar_ele01">
+                        <div class="sider_bg"></div>
+                        <p>在线申请</p>
+                    </div>
+                </a>
+                <a href="./info_enroll.html">
+                    <div class="siderbar_ele siderbar_ele02">
+                        <div class="sider_bg"></div>
+                        <p>招生活动</p>
+                    </div>
+                </a>
+                <a href="./info_down.html">
+                    <div class="siderbar_ele siderbar_ele03">
+                        <div class="sider_bg"></div>
+                        <p>资料下载</p>
+                    </div>
+                </a>
+                <a href="./info_faq.html">
+                    <div class="siderbar_ele siderbar_ele04">
+                        <div class="sider_bg"></div>
+                        <p>常见问题</p>
+                    </div>
+                </a>
+                <a href="./about_us.html">
+                    <div class="siderbar_ele siderbar_ele05">
+                        <div class="sider_bg"></div>
+                        <p>联系我们</p>
+                    </div>
+                </a>
+                <a class="jiathis_button_tsina">
+                    <div class="siderbar_ele siderbar_ele06">
+                        <div class="sider_bg"></div>
+                        <p>分享</p>
+                    </div>
+                </a>
+                <div class="siderbar_ele siderbar_ele07">
+                    <div class="sider_bg"></div>
+                    <p>TOP</p>
+                </div>
+
+            </div>
+            <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+            
+            <div id="shadow"></div>  
+        </div>	
+
+        <div class="grid">
+            <div id="slideli" class="three">
+                <div class="slideli_ul">
+                    <div class="s_menu">
+                        <a href="./"><p>首页</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./introduction.html"><p>项目介绍</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./info_enroll.html"><p>招生信息</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./fea_foster.html"><p>项目特色</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./stu_forum.html"><p>学生生活</p></a>
+                    </div>
+                    <div class="s_menu">
+                        <a href="./about_us.html"><p>关于我们</p></a>
+                    </div>
+                </div>
+                <div class="slideli_s_lan">
+                    <div class="g_l_search">
+                        <form  action="/site/search" accept-charset="UTF-8" method="get">
+                            <input type="text" onfocus="document.getElementById('note02').style.display='none'" onblur="if(value=='')document.getElementById('note02').style.display='block'" class="searchext" placeholder="" name="keyword">
+                            <div id="note02" class="note2" onclick="document.getElementById('note02').style.display='none'" style="display: block;">搜索...</div>
+                            <!--<input type="submit" class="searchbtn">-->
+                            <input type="button" class="searchbtn">
+                        </form>
+                    </div>
+                    <div class="g_langWrap">
+                        <div class="g_langRel">
+                            <div class="g_langSwitch">English</div>
+                            <div class="g_langHid" style="display: none;">
+                                <p><a href="javascript:void(0)">English</a></p>
+                                <p><a href="javascript:void(0)">中文</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $(".g_langSwitch").click(function(){
+                            if($(this).parent(".g_langRel").hasClass("active")){
+                                $(this).parent(".g_langRel").removeClass("active");
+                                $(this).next(".g_langHid").slideUp();
+                            }else{
+                                $(this).parent(".g_langRel").addClass("active");
+                                $(this).next(".g_langHid").slideDown();
+                            }
+                        })
+                    </script>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        
+	</body>
+</html>
