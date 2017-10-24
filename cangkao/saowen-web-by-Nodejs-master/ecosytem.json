@@ -19,7 +19,7 @@
       "ssh_options":"StrictHostKeyChecking=no",
       "env": {
         "NODE_ENV": "production"
-      },
+      }
 
     }
   }
