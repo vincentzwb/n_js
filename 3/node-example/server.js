@@ -8,6 +8,7 @@ var staticExp = /\/public\/(img|css|js)\/[a-z]*\.(jpg|png|gif|css|js)/;
 
 http.createServer((req, res) => {
   var pathname = url.parse(req.url).pathname;
+
   if (staticExp.test(pathname)) {// 静态文件请求交由static处理
     static.get(__dirname + pathname, res);
   } else if (req.method == 'POST') {// 处理普通post请求

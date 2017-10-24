@@ -12,6 +12,7 @@ MIME[".gif"] = "image/gif";
 function get(pathname, res) {
   if (fs.existsSync(pathname)) {
     var extname = path.extname(pathname);
+    
     res.writeHead(200, {'Content-Type': MIME[extname]});
     fs.readFile(pathname, (err, data) => {
       if (err) {
