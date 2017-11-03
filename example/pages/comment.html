@@ -1,0 +1,32 @@
+<div class="wrapper">
+    <div class="main">
+        <div class="comment">
+            <div class="header">
+                <div class="logo">
+                    <a href="/"><img src="images/logo.png" alt="" /></a>
+                </div>
+            </div>
+
+            <div class="comment-con">
+                <div class="comment-title">
+                    <h2>请输入您想对我们说的话：</h2>
+                </div>
+                 <div class="comment_textarea">
+                     <textarea v-model="commentText">
+
+                     </textarea>
+                     <div class="text">
+                       <p v-if="commentText==''">{{commenterror}}</p>
+                      </div>
+                 </div>
+
+                   <a class="next_question" @click="saveComment">提交评论</a>
+            </div>
+           
+            <div class="footer footer_pro">
+                <h3>康丽根代理商促销员在线培训系统</h3>
+                <p>Culligan<sup>®</sup> Online Training System</p>
+            </div>
+        </div>
+    </div>
+</div>

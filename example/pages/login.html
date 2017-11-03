@@ -1,0 +1,43 @@
+
+<div class="wrapper">
+    <div class="main">
+        <div class="login">
+            <div class="header">
+                <div class="logo">
+                    <a href="/"><img src="images/logo.png" alt=""/></a>
+                </div>
+            </div>
+
+            <div class="login_con">
+                <div class="login_title">
+                    <h2>康丽根代理商促销员</h2>
+                    <h2>在线培训系统</h2>
+                    <h3>Culligan<sup>®</sup> Online Training System</h3>
+                </div>
+                <div class="login_form">
+                    <!--                    <form class="clearfix">-->
+                    <div class="clearfix">
+                        <div class="item login_name">
+                            <label></label>
+                            <input type="text" v-model="usename" placeholder="请输入您的姓名">
+                        </div>
+                        <div class="item login_phone">
+                            <label></label>
+                            <input type="text"  v-model="userphone" value="" placeholder="请输入您的手机号">
+                        </div>
+                        <div class="err">
+                            <p>{{error}}</p>
+                        </div>
+                        <div class="item_btn">
+                            <input type="button" value="登   录"  class="submit_info" @click="loginthis($event)" >
+                            <!--<button value="登   录" style="width: 200px;height: 40px;" @click="loginthis($event)" ></button>-->
+
+
+                        </div>
+                    </div>
+                    <!--</form>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

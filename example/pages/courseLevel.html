@@ -1,0 +1,52 @@
+<div class="wrapper">
+    <div class="main">
+        <div class="course_list">
+            <div class="header">
+                <div class="logo">
+                    <a href="/"><img src="images/logo.png" alt=""/></a>
+
+                </div>
+            </div>
+            <div class="course_list_con">
+                <h2>课程中心</h2>
+                <div class="course_level">
+                    <ul class="clearfix">
+                        <li class="hasAttend">
+                            <router-link to="/courseList/0">
+                                初级课程
+                            </router-link>
+                        </li>
+                        
+<!--                        <li class="hasAttend">
+                            <router-link to="/courseList/1">
+                                中级课程
+                            </router-link>
+                        </li>-->
+                        
+                        <li v-if="level2==1" class="hasAttend">
+                            <router-link to="/courseList/1">
+                                中级课程
+                            </router-link>
+                        </li>
+                        <li v-else>
+                            <a>中级课程</a>
+                        </li>
+                        <li v-if="level3==1" class="hasAttend">
+                            <router-link to="/courseList/2">
+                                高级课程
+                            </router-link>
+                        </li>
+                         <li v-else>
+                            <a>高级课程</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer">
+                <h3>康丽根代理商促销员在线培训系统</h3>
+                <p>Culligan<sup>®</sup> Online Training System</p>
+            </div>
+        </div>
+    </div>
+</div>

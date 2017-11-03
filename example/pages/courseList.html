@@ -1,0 +1,82 @@
+<div class="wrapper">
+    <div class="main">
+        <div class="course_list course_list2">
+            <div class="header">
+                <div class="logo">
+                    <a href="/"><img src="images/logo.png" alt=""/></a>
+                    
+                </div>
+            </div>
+            <div class="course_list_con">
+                <h2><span v-if='levelNume==0'>初级</span><span v-if='levelNume==1'>中级</span><span v-if='levelNume==2'>高级</span>课程列表</h2>
+                <div class="totile">
+                    <!-- <p>(共64个课程)</p> -->
+                </div>
+
+                
+                <div class="list">
+                    <ul class="clearfix">
+                        
+                        
+                        <li v-for="courseli in courselist" v-if="courseli.status==true" class="hasAttend">
+                            <div class="li_a">
+                               <router-link :to="'/examination/'+courseli.courses_id">{{courseli.title}}</router-link>
+                            </div>
+                        </li>
+                         <li v-for="courseli in courselist" v-if="courseli.status==false" class="">
+                            <div class="li_a">
+<!--                               <router-link :to="'/examination/'+courseli.courses_id">{{courseli.title}}</router-link>-->
+
+                                <a>{{courseli.title}}</a>
+                            </div>
+                        </li>
+
+
+
+                        
+                        <!-- <li class="non_point hasSuccess"> <div class="li_a "><a>lessson2</a></div></li>
+                        <li class="non_point hasAttend"> <div class="li_a "><a>lessson/课程3</a></div></li>
+                        <li class="non_point"> <div class="li_a"><a>lessson/课程4</a></div></li>
+                        <li class="non_point"> <div class="li_a"><a>lessson/课程5</a></div></li>
+                        <li class="non_point"> <div class="li_a"><a>lessson/课程6</a></div></li>
+                        <li class="non_point"> <div class="li_a"><a>lessson/课程7</a></div></li>
+                        <li class="non_point"> <div class="li_a"><a>lessson/课程8</a></div></li> 
+                        <li class="non_point"> <div class="li_a"><a>lessson/课程9</a></div></li>
+                        <li class="non_point"> <div class="li_a"><a>lessson/课程10</a></div></li>
+                        <li class="non_point"> <div class="li_a"><a>lessson/课程11</a></div></li>
+                        <li class="non_point"> <div class="li_a"><a>lessson/课程12</a></div></li>
+                        <li class="non_point"> <div class="li_a"><a>lessson/课程13</a></div></li>
+                        <li class="non_point"> <div class="li_a"><a>lessson/课程14</a></div></li> 
+                        <li class="non_point"> <div class="li_a"><a>lessson/课程15</a></div></li>
+                        <li class="non_point"> <div class="li_a"><a>lessson/课程16</a></div></li> -->
+                        <!-- <li class="non_point"><a>LEVEL/课程3</a></li>
+                        <li class="non_point"><a>LEVEL/课程4</a></li>
+                        <li class="non_point"><a>LEVEL/课程5</a></li>
+                        <li class="non_point"><a>LEVEL/课程6</a></li>
+                        <li class="non_point"><a>LEVEL/课程7</a></li>
+                        <li class="non_point"><a>LEVEL/课程8</a></li>
+                        <li class="non_point"><a>LEVEL/课程9</a></li>
+                        <li class="non_point"><a>LEVEL/课程10</a></li>
+                        <li class="non_point"><a>LEVEL/课程11</a></li>
+                        <li class="non_point"><a>LEVEL/课程12</a></li>
+                        <li class="non_point"><a>LEVEL/课程13</a></li>
+                        <li class="non_point"><a>LEVEL/课程14</a></li>
+                        <li class="non_point"><a>LEVEL/课程15</a></li>
+                        <li class="non_point"><a>LEVEL/课程16</a></li> -->
+                    </ul>
+                </div>
+                <!-- <div class="pages">
+                    <ul class="clearfix">
+                        <li><a>上一页</a></li>
+                        <li><a>下一页</a></li>
+                    </ul>
+                </div> -->
+            </div>
+
+            <div class="footer">
+                <h3>康丽根代理商促销员在线培训系统</h3>
+                <p>Culligan<sup>®</sup> Online Training System</p>
+            </div>
+        </div>
+    </div>
+</div>

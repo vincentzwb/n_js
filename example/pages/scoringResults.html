@@ -1,0 +1,132 @@
+
+<div class="wrapper">
+    <div class="main">
+        <div class="scoringResults">
+            <div class="header">
+                <div class="logo">
+                    <a href="/"><img src="images/logo.png" alt=""/></a>
+                </div>
+                
+                <div class="usercenter_icon">
+                    <router-link to="/userCenter"></router-link>
+                </div>
+                
+            </div>
+
+            <div class='scoringResults_banner'>
+                <div class='scoringResults_banner_con'>
+                    <p>答题成绩</p>
+                    <div class='scoringResults_yuan'>
+                        <iframe :src="'/culliganexamine/account.html?account='+resultScore.Total_score"></iframe>
+                        <!-- <iframe :src="'/culliganexamine/account.html?account='+10"></iframe> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="scoringResults_correct_rate">
+                <ul class="clearfix">
+                    <li>
+                        <h3><strong>{{resultScore.Total_score}}</strong>%</h3>
+                        <p>正确率</p>
+                    </li>
+                    <li>
+                        <h3><strong>{{resultScore.count}}</strong>次</h3>
+                        <p>重复率</p>
+                    </li>
+                    <li>
+                        <h3>
+                             <strong>{{resultScore.finish_time}}</strong> 
+                        </h3>
+                        <p>答题用时</p>
+                    </li>
+                </ul>
+            </div>
+            <div class='scoringResults_success res_success' v-if="resultScore.finish_status==1">
+                <h3>恭喜您通过考试<br/>目前是测试版本、正式版本即将上线！</h3>
+            </div>
+            <div class='scoringResults_success res_wrong' v-if="resultScore.finish_status==0" >
+                <h3 style="color: red;">很抱歉<br/>您没有通过考试、请重新开始考试!</h3>
+            </div>
+            <div class="cul-btn">
+                <template v-if="resultScore.finish_status==0">
+                    <router-link :to="'/examination/'+courseid">重新开始</router-link>
+                </template>
+                <router-link to="/comment">我要评论</router-link>
+            </div>
+            <div class="scoringResults_skill_level">
+                <h2>技能水平</h2>
+                <div class="skill_level_nav">
+                    <ul class="clearfix">
+                        <li class="active" @click="skill_level_qb($event)">全部</li>
+                        <li @click="skill_level($event)">产品</li>
+                        <li @click="skill_level($event)">公司品牌</li>
+                        <li @click="skill_level($event)">水知识</li>
+                        <li @click="skill_level($event)">竞品</li>
+                        <li @click="skill_level($event)">销售技巧</li>
+                    </ul>
+                </div>
+                 
+                <div class="skill_level_container">
+                    <div class="skill_level_item">
+                        <h3>{{resultScore.lat_one_name}}<strong>{{resultScore.lat_one_pr}}</strong></h3>
+                        <div class="skill_level_item_list item1_color">
+                             <div class="progressbar">
+                                <div class="bar color4"><span></span></div>
+                                <div class="label"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_level_item">
+                         <h3>{{resultScore.lat_two_name}}<strong>{{resultScore.lat_two_pr}}</strong></h3>
+                        <div class="skill_level_item_list item2_color">
+                            <div class="progressbar">
+                                    <div class="bar color4"><span></span></div>
+                                    <div class="label"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_level_item">
+                        <h3>{{resultScore.lat_three_name}}<strong>{{resultScore.lat_three_pr}}</strong></h3>
+                        <div class="skill_level_item_list item3_color">
+                            <div class="progressbar">
+                                <div class="bar color4"><span></span></div>
+                                <div class="label"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_level_item">
+                         <h3>{{resultScore.lat_four_name}}<strong>{{resultScore.lat_four_pr}}</strong></h3>
+                        <div class="skill_level_item_list item4_color">
+                            <div class="progressbar">
+                                <div class="bar color4"><span></span></div>
+                                <div class="label"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill_level_item">
+                        <h3>{{resultScore.lat_five_name}}<strong>{{resultScore.lat_five_pr}}</strong></h3>
+                        <div class="skill_level_item_list item5_color">
+                            <div class="progressbar">
+                                <div class="bar color4"><span></span></div>
+                                <div class="label"><span></span></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="footer">
+                <h3>康丽根代理商促销员在线培训系统</h3>
+                <p>Culligan<sup>®</sup> Online Training System</p>
+            </div>
+        </div>
+    </div>
+</div>
+

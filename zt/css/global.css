@@ -1,0 +1,335 @@
+html{font:14px/24px Arial,"PingFang SC", "Hiragino Sans GB", "Microsoft YaHei","STHeiti","WenQuanYi Micro Hei", Helvetica,  sans-serif; }
+
+body,html,div,a,span,p,ul,li,img,h1,h2,h3,h4,h5,h6,input{margin: 0;padding: 0;}
+img {border: 0 none;}
+a{text-decoration: none;vertical-align: top;cursor: pointer;}
+li{list-style: none;}
+.clearfix {display: block;*zoom: 1;height: 1%;}
+.clearfix:after {display: block;content: "\0020";clear: both;font-size: 0;height: 0;visibility: hidden;}
+.clearBefore:before{content:"";font-size: 0;display: block;visibility: hidden;height: 0;clear: both;}
+.clearAfter:after{content:"";font-size: 0;display: block;visibility: hidden;height: 0;clear: both;}
+body,html{position: relative;}
+html{
+    background: #f5f5f5;
+}
+
+
+.login_section{
+    padding-top:48px;
+    position: relative;
+    width: 856px;
+    margin: 0 auto;
+}
+.login_inner{
+    width:363px;
+    margin: 0 auto;
+}
+.login_react{
+    height: 619px;
+    background: #ffffff;
+    
+}
+
+.login_section .logo{
+    text-align: center;
+}
+/*选择登录*/
+.login_select{
+    padding-top: 151px;
+}
+.login_select .cont{
+    padding-top: 30px;
+}
+.login_select .ele{
+    padding-bottom: 36px;
+}
+.login_select .ele_btn{
+    cursor: pointer;
+    height:46px;
+    line-height: 46px;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #666666;
+}
+
+/*账号登录*/
+.login_login{
+    padding-top: 66px;
+}
+.login_login .t_name{
+    text-align: center;
+    padding-top: 18px;
+}
+.login_login .t_name p{
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+}
+.login_login .cont{
+    padding-top: 30px;
+}
+.login_login .input_Wrap{
+    padding-bottom: 12px;
+}
+.login_login .input_Wrap input{
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    font-size: 12px;
+    text-indent: 12px;
+}
+.login_login .btn_wrap{
+    padding-top: 23px;
+}
+.login_login .btn_wrap input{
+    background:#2098dc;
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid #2098dc;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.login_login .bottom_font{
+    text-align: center;
+    padding-top: 35px;
+}
+.login_login .bottom_font a{
+    font-size: 15px;
+    color: #666666;
+}
+.login_login .bottom_font a span{
+    color: #0b87ce;
+}
+.login_login .bottom_font a:hover{
+    text-decoration: underline;
+}
+
+/*注册账号*/
+.login_register{
+    padding-top: 66px;
+}
+.login_register .t_name{
+    text-align: center;
+    padding-top: 18px;
+}
+.login_register .t_name p{
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+}
+.login_register .cont{
+    padding-top: 30px;
+}
+.login_register .input_Wrap{
+    padding-bottom: 12px;
+}
+.login_register .input_Wrap input{
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    font-size: 12px;
+    text-indent: 12px;
+}
+.login_register .Veri{
+    position: relative;
+}
+.login_register .Veri input{
+    width: 217px;
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    font-size: 12px;
+    text-indent: 12px;
+}
+.login_register .veri_code{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height:48px;
+    width:111px;
+    overflow: hidden;
+}
+.login_register .veri_code img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.login_register .btn_wrap{
+    padding-top: 23px;
+}
+.login_register .btn_wrap input{
+    background:#2098dc;
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid #2098dc;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.login_register .bottom_font{
+    padding-top: 19px;
+}
+.login_register .bottom_font p{
+    font-size: 15px;
+    color: #999999;
+}
+.login_register .bottom_font a{
+    color: #333333;
+}
+.login_register .bottom_font a:hover{
+    text-decoration: underline;
+}
+
+
+/*重置密码*/
+.login_reset{
+    padding-top: 127px;
+}
+.login_reset .t_name{
+    text-align: center;
+    padding-top: 18px;
+}
+.login_reset .t_name p{
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+}
+.login_reset .cont{
+    padding-top: 30px;
+}
+.login_reset .input_Wrap{
+    padding-bottom: 12px;
+}
+.login_reset .input_Wrap input{
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    font-size: 12px;
+    text-indent: 12px;
+}
+.login_reset .Veri{
+    position: relative;
+}
+.login_reset .Veri input{
+    width: 217px;
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    font-size: 12px;
+    text-indent: 12px;
+}
+.login_reset .veri_code{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height:48px;
+    width:111px;
+    overflow: hidden;
+}
+.login_reset .veri_code img{
+    width: 100%;
+    height: 100%;
+}
+
+.login_reset .btn_wrap{
+    padding-top: 23px;
+}
+.login_reset .btn_wrap input{
+    background:#2098dc;
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid #2098dc;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/*账户安全验证*/
+.login_safe{
+    padding-top: 127px;
+}
+.login_safe .t_name{
+    text-align: center;
+    padding-top: 18px;
+}
+.login_safe .t_name p{
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+}
+.login_safe .cont{
+    padding-top: 30px;
+}
+.login_safe .cont .p1 p{
+    color: #333333;
+    font-size: 14px;
+    line-height: 28px;
+}
+.login_safe .cont .p2{
+    padding-top: 26px;
+}
+.login_safe .cont .p2 p{
+    color: #969999;
+}
+.login_safe .cont .p2 p span{
+    color: #5aa700;
+}
+.login_safe .btn_wrap{
+    padding-top: 34px;
+}
+.login_safe .btn_wrap p{
+    background:#2098dc;
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid #2098dc;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+.login_footer{
+    padding-top: 30px;
+    padding-bottom: 65px;
+     text-align: center;
+}
+.login_footer .links a{
+   color: #333333;
+}
+.login_footer .links a:hover{
+    text-decoration: underline;
+}
+.login_footer .copyRight{
+    padding-top: 26px;
+}
+
+

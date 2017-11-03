@@ -1,0 +1,108 @@
+<div class="wrapper">
+    <div class="main">
+        <div class="examination">
+            <div class="header">
+                <div class="logo">
+                    <a href="/"><img src="images/logo.png" alt="" /></a>
+                </div>
+                
+                <div class="examination_progress_bar">
+<!--                    <div id="jqmeter-container"></div> -->
+                    
+                    <div class="progressbar examination_progressbar">
+                        <div class="bar color4"><span></span></div>
+                        <div class="label"><span></span></div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="course_content_con">
+                <h2>{{content.title}}</h2>
+                <div class="course_content_article" v-html="content.content">
+                </div>
+
+                <a class="next_page" @click="changpage">下一页</a>
+            </div>
+            
+            <div class="examination_con">
+                <div class="examinationList">
+                    <div v-for="(examination,index) in examinationList" :class="'examinationpage'+index" class="examinationpage" >
+                        <h3 class="subject"><strong>{{examination.Examination_id}}</strong>{{examination.question.split("（")[0]}}(&nbsp;&nbsp;&nbsp;&nbsp;){{examination.question.split("）")[1]}}</h3>
+                        
+                        <div class="examination1_list" v-if="examination.type=='选择'">
+                            <ul class="clearfix">
+                                <li @click="userAnswer($event)" value="A" :qus-id="index+1" :qus="examination.question" v-if="examination.A.image!=''&&examination.A.text!=''">
+                                    <h3>A</h3>
+                                    <div class="pic" v-if="examination.A.image!=''">
+                                        <img :src="examination.A.image" alt="" />
+                                    </div>
+                                    <div class="choice"  v-if="examination.A.text!=''">{{examination.A.text}}</div>
+                                </li>
+                                <li @click="userAnswer($event)" value="B" :qus-id="index+1"  :qus="examination.question" v-if="examination.B.image!=''&&examination.B.text!=''">
+                                    <h3>B</h3>
+                                    <div class="pic" v-if="examination.B.image!=''">
+                                        <img :src="examination.B.image" alt="" />
+                                    </div>
+                                    <div class="choice"  v-if="examination.B.text!=''">{{examination.B.text}}</div>
+                                </li>
+                                <li @click="userAnswer($event)" value="C" :qus-id="index+1"  :qus="examination.question" v-if="examination.C.image!=''&&examination.C.text!=''">
+                                    <h3>C</h3>
+                                    <div class="pic" v-if="examination.C.image!=''">
+                                        <img :src="examination.C.image" alt="" />
+                                    </div>
+                                    <div class="choice"  v-if="examination.C.text!=''">{{examination.C.text}}</div>
+                                </li>
+                                <li @click="userAnswer($event)" value="D" :qus-id="index+1"  :qus="examination.question" v-if="examination.D.image!=''&&examination.D.text!=''" >
+                                    <h3>D</h3>
+                                    <div class="pic" v-if="examination.D.image!=''">
+                                        <img :src="examination.D.image" alt="" />
+                                    </div>
+                                    <div class="choice" v-if="examination.D.text!=''">{{examination.D.text}}</div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="examination2" v-else>
+                            <div class="examination2_list">
+                                <ul class="clearfix">
+                                    <li @click="userAnswer($event)" value="A" :qus-id="index+1" :qus="examination.question">
+                                        <div class="pic right">
+                                            <img src="images/correct_icon.png" alt=""/>
+                                        </div>
+                                    </li>
+                                    <li @click="userAnswer($event)" value="B" :qus-id="index+1"  :qus="examination.question">
+                                        <div class="pic error">
+                                            <img src="images/error_icon.png" alt=""/>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                        </div>
+
+                           <a class="next_question" v-if="index<19" @click="changeQuestions(index+1)">下一题</a>
+                           <a class="next_question" v-else @click="saveQuestions()">提交试卷</a>
+                           
+                            <!--<router-link :to="'/examination/'+courseid+'/'+id2" class="next_question">下一题{{id2}}</router-link>
+                        </template>
+                        <template v-else>
+                            <router-link to="/scoringResults" class="next_question">提交试卷</router-link>
+                        </template>-->
+                            
+                       
+                    </div>
+                </div>
+
+            </div>
+                <div class="examination_time">
+                     <p class="time">已用时：{{exam_time}}</p>
+                </div>
+            <div class="footer footer_pro">
+                 
+                <h3>康丽根代理商促销员在线培训系统</h3>
+                <p>Culligan<sup>®</sup> Online Training System</p>
+            </div>
+        </div>
+    </div>
+</div>

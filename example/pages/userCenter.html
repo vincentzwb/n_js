@@ -1,0 +1,53 @@
+
+<div class="wrapper">
+    <div class="main">
+        <div class="user_center">
+            <div class="header">
+                <div class="logo">
+                    <a href="/"><img src="images/logo.png" alt=""/></a>
+                </div>
+            </div>
+            <div class="user_center_con">
+                <div class="title">
+                    <h2>用户中心</h2>
+                    <h3>USER CENTER</h3>
+                </div>
+
+                <div class="user_head_portrait">
+                    <div class="pic">
+                        <img :src="resultdata.head_image" alt=""/>
+                    </div>
+                    <h3>{{resultdata.nickname}}</h3>
+                </div>
+
+                <div class="user_best_record">
+                    <h2>最佳纪录</h2>
+                    <div class="user_best_record_list">
+                        <ul class="clearfix">
+                            <li @click="slidechild($event)" v-for="coursesList in coursesresultlist">
+                                <h3>{{coursesList.lession_title}}</h3>
+                                <div class="down"></div>
+                                <div class="user_best_record_show">
+                                    <div class="section clearfix">
+                                        <p><strong>考试时间：</strong>{{coursesList.finally_time}}</p>
+                                        <p><strong>答题用时：</strong>{{coursesList.finish_time}}</p>
+                                        <p><strong>考试得分：</strong>{{coursesList.total}}分</p>
+                                        <p><strong>考试次数：</strong>{{coursesList.counts}}次</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer footer_pro">
+                <h3>康丽根代理商促销员在线培训系统</h3>
+                <p>Culligan<sup>®</sup> Online Training System</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
